@@ -59,7 +59,9 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     // actions
     
     var errormsg = ""
-    var errormsg2: String? = ""
+    var errormsg2 = ""
+    //var errormsg2: String? = ""
+    
     var runningnum = ""
     var runningWeight = ""
     var runningMedAmt = ""
@@ -67,6 +69,10 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     var output1 = Double()
     var output2 = Double()
+    
+    var FinalDose = Double()
+    var FinalLiqDose = Double()
+    //var FinalLiqDose: Double?
     
     var PatWeight = ""
     var PatDose = ""
@@ -148,7 +154,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
                 print("error")
             } else {
                 errormsg = ""
-                runningWeight = "\(Double(PatWeight)! * 0.4539237)"
+                runningWeight = "\(Double(PatWeight)! * 0.45359237)"
             }
         case .none:
             runningWeight = ""
@@ -230,11 +236,133 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         // make errormsg empty after error is fixed ??
         // also clear lbl if required field is cleared EX: dose entered and weight, press button then removed weight should clear label
         if errormsg.isEmpty{
+            
             output1 = Double(runningnum)! * Double(runningWeight)!
-            DosageOutputLbl.text = String(output1)
+            
+            switch DoseFreqTxt.text {
+            case "gm BID"?:
+                FinalDose = (output1 / 2000)
+            case "gm Daily"?:
+                FinalDose = (output1 / 1000)
+            case "gm QID"?:
+                FinalDose = (output1 / 4000)
+            case "gm TID"?:
+                FinalDose = (output1 / 3000)
+            case "gm q1 hr"?:
+                FinalDose = (output1 / 24000)
+            case "gm q2 hr"?:
+                FinalDose = (output1 / 12000)
+            case "gm q4 hr"?:
+                FinalDose = (output1 / 6000)
+            case "mcg BID"?:
+                FinalDose = (output1 / 0.002)
+            case "mcg Daily"?:
+                FinalDose = (output1 / 0.001)
+            case "mcg QID"?:
+                FinalDose = (output1 / 0.004)
+            case "mcg TID"?:
+                FinalDose = (output1 / 0.003)
+            case "mcg q1 hr"?:
+                FinalDose = (output1 / 0.024)
+            case "mcg q2 hr"?:
+                FinalDose = (output1 / 0.012)
+            case "mcg q4 hr"?:
+                FinalDose = (output1 / 0.006)
+            case "mg BID"?:
+                FinalDose = (output1 / 2)
+            case "mg Daily"?:
+                FinalDose = (output1 / 1)
+            case "mg QID"?:
+                FinalDose = (output1 / 4)
+            case "mg TID"?:
+                FinalDose = (output1 / 3)
+            case "mg q1 hr"?:
+                FinalDose = (output1 / 24)
+            case "mg q2 hr"?:
+                FinalDose = (output1 / 12)
+            case "mg q4 hr"?:
+                FinalDose = (output1 / 6)
+            case .none:
+                print("error")
+            default:
+                FinalDose = (output1 / 1)
+            }
+            //is that rounding or limitting to just that much ?
+            switch DecPercTxt.text{
+            case "0"?:
+                DosageOutputLbl.text = String(format: "%.f", FinalDose)
+            case "1"?:
+                DosageOutputLbl.text = String(format: "%.1f", FinalDose)
+            case "2"?:
+                DosageOutputLbl.text = String(format: "%.2f", FinalDose)
+            case "3"?:
+                DosageOutputLbl.text = String(format: "%.3f", FinalDose)
+            case .none:
+                print("error")
+            default:
+                DosageOutputLbl.text = String(format: "%.2f", FinalDose)
+            }
+            //DosageOutputLbl.text = String(FinalDose)
+            }
+        
+        if errormsg2.isEmpty{
+            
+            //output2 = (((Double(runningnum)! * Double(runningWeight)!) * Double(runningPerVol)!) / Double(runningMedAmt)!)
+            output2 = ((output1 * Double(runningPerVol)!) / Double(runningMedAmt)!)
+            
+            switch LiqDoseFreqTxt.text {
+            case "L BID"?:
+                FinalLiqDose = (output2 / 2000)
+            case "L Daily"?:
+                FinalLiqDose = (output2 / 1000)
+            case "L QID"?:
+                FinalLiqDose = (output2 / 4000)
+            case "L TID"?:
+                FinalLiqDose = (output2 / 3000)
+            case "L q1 hr"?:
+                FinalLiqDose = (output2 / 24000)
+            case "L q2 hr"?:
+                FinalLiqDose = (output2 / 12000)
+            case "L q4 hr"?:
+                FinalLiqDose = (output2 / 6000)
+            case "mL BID"?:
+                FinalLiqDose = (output2 / 2)
+            case "mL Daily"?:
+                FinalLiqDose = (output2 / 1)
+            case "mL QID"?:
+                FinalLiqDose = (output2 / 4)
+            case "mL TID"?:
+                FinalLiqDose = (output2 / 3)
+            case "mL q1 hr"?:
+                FinalLiqDose = (output2 / 24)
+            case "mL q2 hr"?:
+                FinalLiqDose = (output2 / 12)
+            case "mL q4 hr"?:
+                FinalLiqDose = (output2 / 6)
+            case .none:
+                print("error")
+            default:
+                FinalLiqDose = (output2 / 1)
+            }
+            
+            switch DecPercTxt.text{
+            case "0"?:
+                LiqDosageOutputLbl.text = String(format: "%.f", FinalLiqDose)
+            case "1"?:
+                LiqDosageOutputLbl.text = String(format: "%.1f", FinalLiqDose)
+            case "2"?:
+                LiqDosageOutputLbl.text = String(format: "%.2f", FinalLiqDose)
+            case "3"?:
+                LiqDosageOutputLbl.text = String(format: "%.3f", FinalLiqDose)
+            case .none:
+                print("error")
+            default:
+                LiqDosageOutputLbl.text = String(format: "%.2f", FinalLiqDose)
+            }
+            
+            //LiqDosageOutputLbl.text = String(FinalLiqDose)
         }
         
-       // output2 = Double(runningMedAmt)! * Double(runningPerVol)!
     }
     let DosageWeight = ["mg/kg","mcg/kg","gm/kg"]
     

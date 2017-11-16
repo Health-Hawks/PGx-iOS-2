@@ -172,6 +172,9 @@
                                 <state key="normal" title="Get Started">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="YM9-lR-O3b" kind="show" id="DyK-vy-ULu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s28-Oq-dSA">
                                 <rect key="frame" x="107" y="347" width="140" height="50"/>
@@ -214,11 +217,11 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8wC-oy-qOC">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="8wC-oy-qOC">
                                         <rect key="frame" x="8" y="54" width="192" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-Yc-8tz">
-                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -233,7 +236,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MxY-M5-nJP">
-                                                <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
+                                                <rect key="frame" x="121.5" y="0.0" width="70.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -359,10 +362,10 @@
                                         <rect key="frame" x="220" y="133" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="I2S-DT-5Do"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="I2S-DT-5Do"/>
                                             <constraint firstAttribute="height" constant="30" id="W5T-Ne-jso"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -386,10 +389,10 @@
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="OnF-UY-bgr"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="OnF-UY-bgr"/>
                                             <constraint firstAttribute="height" constant="30" id="ydF-hg-qLA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1814,19 +1817,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recommendations" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-Bp-ZLN">
                                 <rect key="frame" x="43" y="105" width="172" height="47"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2q-90-gZ3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m2q-90-gZ3">
                                 <rect key="frame" x="42" y="135" width="297" height="76"/>
+                                <string key="image">For malignancy, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily</string>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Adult 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-OD-mxG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adult 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-OD-mxG">
                                 <rect key="frame" x="75" y="218" width="253" height="19"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pediatric 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-Rx-ZkM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatric 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-Rx-ZkM">
                                 <rect key="frame" x="75" y="245" width="278" height="19"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-Mq-YST">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-Mq-YST">
                                 <rect key="frame" x="42" y="284" width="278" height="37"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="uY1-d0-TzY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="uY1-d0-TzY">
                                 <rect key="frame" x="42" y="332" width="268" height="57"/>
                             </imageView>
                         </subviews>
@@ -3103,7 +3107,7 @@
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="Kc3-Ol-Lld"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="Kc3-Ol-Lld"/>
                                             <constraint firstAttribute="height" constant="30" id="px5-4v-POd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -3196,20 +3200,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recommendations" translatesAutoresizingMaskIntoConstraints="NO" id="iYm-tb-EzN">
                                 <rect key="frame" x="43" y="105" width="172" height="47"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t4g-rI-IOb">
-                                <rect key="frame" x="42" y="135" width="297" height="76"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Adult 0.25 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="RsJ-YQ-ZEo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adult 0.25 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="RsJ-YQ-ZEo">
                                 <rect key="frame" x="75" y="213" width="261" height="19"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pediatric 0.125-0.25 mg-kg (5-7 mg-m2) three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="g3d-FM-DfL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatric 0.125-0.25 mg-kg (5-7 mg-m2) three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="g3d-FM-DfL">
                                 <rect key="frame" x="75" y="236" width="224" height="37"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="lyP-wj-DXG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="lyP-wj-DXG">
                                 <rect key="frame" x="42" y="284" width="278" height="37"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="kEc-mV-k0r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="kEc-mV-k0r">
                                 <rect key="frame" x="42" y="332" width="268" height="57"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bot-Gl-HgA">
+                                <rect key="frame" x="42" y="135" width="297" height="76"/>
+                                <string key="image">For malignancy, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily</string>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -3217,26 +3222,26 @@
                             <constraint firstItem="lyP-wj-DXG" firstAttribute="top" secondItem="g3d-FM-DfL" secondAttribute="bottom" constant="11" id="5IW-mD-Je8"/>
                             <constraint firstItem="kEc-mV-k0r" firstAttribute="top" secondItem="lyP-wj-DXG" secondAttribute="bottom" constant="11" id="5LN-jn-NSC"/>
                             <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="iYm-tb-EzN" secondAttribute="trailing" constant="160" id="7kb-Ll-aqY"/>
-                            <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="t4g-rI-IOb" secondAttribute="trailing" constant="36" id="GuF-CJ-c6i"/>
+                            <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="Bot-Gl-HgA" secondAttribute="trailing" constant="36" id="DDe-AY-iha"/>
                             <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="g3d-FM-DfL" secondAttribute="trailing" constant="76" id="IEQ-ZH-oL4"/>
                             <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="qXv-ik-8HM" secondAttribute="trailing" constant="181" id="KDm-nN-uco"/>
-                            <constraint firstItem="t4g-rI-IOb" firstAttribute="top" secondItem="qXv-ik-8HM" secondAttribute="bottom" constant="21" id="NOh-8q-5p4"/>
                             <constraint firstItem="CLl-dW-nnJ" firstAttribute="bottom" secondItem="edc-Wy-oqG" secondAttribute="bottom" id="O2a-wu-Ywr"/>
                             <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="kEc-mV-k0r" secondAttribute="trailing" constant="65" id="QGO-Gz-uJz"/>
                             <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="lyP-wj-DXG" secondAttribute="trailing" constant="55" id="QaY-LI-Ngu"/>
                             <constraint firstItem="g3d-FM-DfL" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="75" id="T74-kj-9Nt"/>
                             <constraint firstItem="kEc-mV-k0r" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="42" id="TfI-YX-6hb"/>
                             <constraint firstItem="qXv-ik-8HM" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="43" id="UUG-PD-9dZ"/>
-                            <constraint firstItem="t4g-rI-IOb" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="42" id="Vo4-B4-rw7"/>
                             <constraint firstItem="qXv-ik-8HM" firstAttribute="top" secondItem="edc-Wy-oqG" secondAttribute="top" constant="47" id="cFf-F3-QrA"/>
+                            <constraint firstItem="RsJ-YQ-ZEo" firstAttribute="top" secondItem="Bot-Gl-HgA" secondAttribute="bottom" constant="2" id="fEf-EP-HcI"/>
                             <constraint firstItem="edc-Wy-oqG" firstAttribute="trailing" secondItem="RsJ-YQ-ZEo" secondAttribute="trailing" constant="39" id="ftc-cZ-yEb"/>
                             <constraint firstItem="CLl-dW-nnJ" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" id="gwx-63-pcT"/>
                             <constraint firstItem="RsJ-YQ-ZEo" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="75" id="kdp-7A-qHO"/>
-                            <constraint firstItem="RsJ-YQ-ZEo" firstAttribute="top" secondItem="t4g-rI-IOb" secondAttribute="bottom" constant="2" id="n0h-5K-ABf"/>
+                            <constraint firstItem="Bot-Gl-HgA" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="42" id="r2G-91-D6y"/>
                             <constraint firstItem="CLl-dW-nnJ" firstAttribute="trailing" secondItem="edc-Wy-oqG" secondAttribute="trailing" id="raL-at-UE3"/>
                             <constraint firstItem="iYm-tb-EzN" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="43" id="u9T-EI-JeO"/>
                             <constraint firstItem="iYm-tb-EzN" firstAttribute="top" secondItem="edc-Wy-oqG" secondAttribute="top" constant="85" id="vwN-le-5XY"/>
                             <constraint firstItem="lyP-wj-DXG" firstAttribute="leading" secondItem="edc-Wy-oqG" secondAttribute="leading" constant="42" id="xFQ-ML-AfP"/>
+                            <constraint firstItem="Bot-Gl-HgA" firstAttribute="top" secondItem="qXv-ik-8HM" secondAttribute="bottom" constant="21" id="yq9-sq-TD3"/>
                             <constraint firstItem="g3d-FM-DfL" firstAttribute="top" secondItem="RsJ-YQ-ZEo" secondAttribute="bottom" constant="4" id="yr8-2T-NNE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="edc-Wy-oqG"/>
@@ -3637,6 +3642,9 @@
         <image name="Allow 2-4 weeks to reach steady state  after each dose adjustment." width="283" height="37"/>
         <image name="Allow 4-6 weeks to reach steady state  after each dose adjustment." width="283" height="37"/>
         <image name="Consider alternate therapy." width="218" height="19"/>
+        <image width="298" height="76">
+            <string key="name">For malignancy, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily</string>
+        </image>
         <image name="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." width="267" height="57"/>
         <image name="If used, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily" width="298" height="76"/>
         <image name="Immunosuppressant-Kidney  Transplantation" width="212" height="54"/>
