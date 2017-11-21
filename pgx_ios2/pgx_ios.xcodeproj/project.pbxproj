@@ -12,6 +12,7 @@
 		016C34721F8EDA9800D0D5A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016C34701F8EDA9800D0D5A6 /* Main.storyboard */; };
 		016C34741F8EDA9800D0D5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016C34731F8EDA9800D0D5A6 /* Assets.xcassets */; };
 		016C34771F8EDA9800D0D5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016C34751F8EDA9800D0D5A6 /* LaunchScreen.storyboard */; };
+		018207621FC4CAA7006161E9 /* AlleleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018207611FC4CAA7006161E9 /* AlleleViewController.swift */; };
 		FA0897F51FA247650071E488 /* DosageCalculatorTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */; };
 		FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		016C34731F8EDA9800D0D5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		016C34761F8EDA9800D0D5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		016C34781F8EDA9800D0D5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018207611FC4CAA7006161E9 /* AlleleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlleleViewController.swift; sourceTree = "<group>"; };
 		FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalculatorTemplate.swift; sourceTree = "<group>"; };
 		FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 			children = (
 				016C346C1F8EDA9800D0D5A6 /* AppDelegate.swift */,
 				016C346E1F8EDA9800D0D5A6 /* ViewController.swift */,
+				018207611FC4CAA7006161E9 /* AlleleViewController.swift */,
 				016C34701F8EDA9800D0D5A6 /* Main.storyboard */,
 				016C34731F8EDA9800D0D5A6 /* Assets.xcassets */,
 				016C34751F8EDA9800D0D5A6 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0897F51FA247650071E488 /* DosageCalculatorTemplate.swift in Sources */,
+				018207621FC4CAA7006161E9 /* AlleleViewController.swift in Sources */,
 				016C346F1F8EDA9800D0D5A6 /* ViewController.swift in Sources */,
 				FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */,
 				016C346D1F8EDA9800D0D5A6 /* AppDelegate.swift in Sources */,
