@@ -159,38 +159,37 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="1zX-gO-E4c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV1-Ce-tjg">
-                                <rect key="frame" x="107" y="226" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0qh-b0-pO4"/>
-                                </constraints>
-                                <state key="normal" title="Get Started">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsy-Kd-n7V">
+                                <rect key="frame" x="33" y="179" width="326" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Repeat Grid 1"/>
+                                <connections>
+                                    <segue destination="8zB-41-42w" kind="show" id="JGm-q3-pyN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s28-Oq-dSA">
-                                <rect key="frame" x="107" y="347" width="140" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Want to know More?">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNX-6c-SXz">
+                                <rect key="frame" x="33" y="293" width="326" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Repeat Grid 1"/>
+                                <connections>
+                                    <segue destination="aQh-YR-l86" kind="show" id="X4X-gC-0xA"/>
+                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen5text1" translatesAutoresizingMaskIntoConstraints="NO" id="Qyq-Hl-Qhf">
+                                <rect key="frame" x="77" y="202" width="266" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen5text2" translatesAutoresizingMaskIntoConstraints="NO" id="wi2-mJ-oe2">
+                                <rect key="frame" x="59" y="311" width="256" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="DV1-Ce-tjg" firstAttribute="trailing" secondItem="s28-Oq-dSA" secondAttribute="trailing" id="1Z3-gc-Wji"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s28-Oq-dSA" secondAttribute="bottom" constant="270" id="7Wm-fS-x1W"/>
-                            <constraint firstItem="s28-Oq-dSA" firstAttribute="top" secondItem="DV1-Ce-tjg" secondAttribute="bottom" constant="71" id="i86-23-BVA"/>
-                            <constraint firstItem="DV1-Ce-tjg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="kQk-ss-MSC"/>
-                            <constraint firstItem="DV1-Ce-tjg" firstAttribute="leading" secondItem="s28-Oq-dSA" secondAttribute="leading" id="q15-iF-KNs"/>
-                            <constraint firstItem="DV1-Ce-tjg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="206" id="vto-VO-pTC"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UFj-xH-Loh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -3270,10 +3269,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen17text1" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-xk-Hjr">
-                                <rect key="frame" x="16" y="88" width="343" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screen17text2" translatesAutoresizingMaskIntoConstraints="NO" id="mzy-3J-IEc">
                                 <rect key="frame" x="22" y="349" width="297" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3292,6 +3287,10 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screen17text5" translatesAutoresizingMaskIntoConstraints="NO" id="NON-4V-rVp">
                                 <rect key="frame" x="22" y="549" width="291" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen17text1" translatesAutoresizingMaskIntoConstraints="NO" id="yx2-xk-Hjr">
+                                <rect key="frame" x="-4" y="356" width="343" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -3525,7 +3524,7 @@
         <!--View Controller-->
         <scene sceneID="VxY-NT-cQU">
             <objects>
-                <viewController id="8zB-41-42w" sceneMemberID="viewController">
+                <viewController id="8zB-41-42w" customClass="ViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ifu-u4-RiE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3542,33 +3541,67 @@
                                 <rect key="frame" x="31" y="304" width="92" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9NM-Fc-IjM">
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9NM-Fc-IjM" userLabel="GenePicker">
                                 <rect key="frame" x="34" y="384" width="306" height="256"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6R-q0-pqK">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6R-q0-pqK">
                                 <rect key="frame" x="137" y="199" width="129" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Gene"/>
+                                <connections>
+                                    <action selector="GenePickerBtnPressed:" destination="8zB-41-42w" eventType="touchUpInside" id="I7F-74-Dn3"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE3-xx-UQl">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rE3-xx-UQl">
                                 <rect key="frame" x="137" y="318" width="129" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Drug"/>
+                                <connections>
+                                    <action selector="DrugPickerBtnPressed:" destination="8zB-41-42w" eventType="touchUpInside" id="mt9-2B-TUr"/>
+                                </connections>
+                            </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BXp-uS-pEH" userLabel="DrugPicker">
+                                <rect key="frame" x="19" y="417" width="340" height="159"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haR-Tz-2cC">
+                                <rect key="frame" x="63" y="-2" width="253" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="HomeNav"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGy-FB-3An">
+                                <rect key="frame" x="-31" y="0.0" width="146" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="BackNav"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D1-iS-UzD">
+                                <rect key="frame" x="258" y="1" width="145" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NextNav"/>
+                                <connections>
+                                    <segue destination="GIa-a6-p07" kind="show" id="9QW-E5-Beb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="k6e-q1-rzs"/>
                     </view>
+                    <connections>
+                        <outlet property="DrugPicker" destination="BXp-uS-pEH" id="DBJ-bK-cTo"/>
+                        <outlet property="DrugPickerBtn" destination="rE3-xx-UQl" id="XwM-7h-pDG"/>
+                        <outlet property="GenePicker" destination="9NM-Fc-IjM" id="YHH-k0-aF8"/>
+                        <outlet property="GenePickerBtn" destination="w6R-q0-pqK" id="o5p-a5-egX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSh-rf-IJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609" y="123"/>
+            <point key="canvasLocation" x="1608.8" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--Allele View Controller-->
         <scene sceneID="sMr-hL-GmJ">
             <objects>
-                <viewController id="GIa-a6-p07" sceneMemberID="viewController">
+                <viewController id="GIa-a6-p07" customClass="AlleleViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0W-f5-APL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3585,20 +3618,36 @@
                                 <rect key="frame" x="51" y="266" width="90" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Allele1"/>
+                                <connections>
+                                    <action selector="Allele1BtnPressed:" destination="GIa-a6-p07" eventType="touchUpInside" id="PM4-A7-rHY"/>
+                                </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="heK-xc-Xyx">
-                                <rect key="frame" x="16" y="431" width="343" height="171"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mou-Ah-hnX">
                                 <rect key="frame" x="228" y="271" width="68" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Allele2"/>
+                                <connections>
+                                    <action selector="Allele2BtnPressed:" destination="GIa-a6-p07" eventType="touchUpInside" id="uhN-6A-326"/>
+                                </connections>
                             </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="heK-xc-Xyx" userLabel="Allele1Picker">
+                                <rect key="frame" x="16" y="431" width="343" height="171"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <pickerView hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZIK-hf-dLV" userLabel="Allele2Picker">
+                                <rect key="frame" x="5" y="435" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ixd-Xa-A0O"/>
                     </view>
+                    <connections>
+                        <outlet property="Allele1Picker" destination="heK-xc-Xyx" id="fw9-ER-TEG"/>
+                        <outlet property="Allele1PickerBtn" destination="A7V-jE-YMj" id="Ta0-Vw-fVA"/>
+                        <outlet property="Allele2Picker" destination="ZIK-hf-dLV" id="vYc-bs-c8Z"/>
+                        <outlet property="Allele2PickerBtn" destination="Mou-Ah-hnX" id="7aw-ls-ltY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asI-VN-P3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3636,8 +3685,10 @@
         <image name="Allow 2 weeks to reach steady state  after each dose adjustment." width="267" height="37"/>
         <image name="Allow 2-4 weeks to reach steady state  after each dose adjustment." width="283" height="37"/>
         <image name="Allow 4-6 weeks to reach steady state  after each dose adjustment." width="283" height="37"/>
+        <image name="BackNav" width="92" height="45"/>
         <image name="Consider alternate therapy." width="218" height="19"/>
         <image name="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." width="267" height="57"/>
+        <image name="HomeNav" width="199" height="43"/>
         <image name="If used, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily" width="298" height="76"/>
         <image name="Immunosuppressant-Kidney  Transplantation" width="212" height="54"/>
         <image name="Immunosuppressant-Kidney Transplantation" width="285" height="32"/>
@@ -3645,6 +3696,7 @@
         <image name="Intermediate Metabolizer" width="222" height="47"/>
         <image name="Juvenile Idiopathic Arthritis" width="203" height="36"/>
         <image name="May cautiously increase to 3 mg-kg daily  if no response after 4 weeks." width="302" height="37"/>
+        <image name="NextNav" width="91" height="44"/>
         <image name="Normal Metabolizer" width="175" height="47"/>
         <image name="Pediatric 0.1 mg-kg three times weekly" width="247" height="16"/>
         <image name="Pediatric 0.125-0.25 mg-kg (5-7 mg-m2) three times weekly" width="225" height="37"/>
@@ -3656,6 +3708,7 @@
         <image name="Pediatric 2 mg-kg daily" width="169" height="19"/>
         <image name="Poor Metabolizer" width="153" height="47"/>
         <image name="Recommendations" width="175" height="47"/>
+        <image name="Repeat Grid 1" width="323" height="96"/>
         <image name="Rheumatoid Arthritis" width="157" height="36"/>
         <image name="Screen17text1" width="319" height="221"/>
         <image name="Screen1text" width="290" height="192"/>
@@ -3669,6 +3722,8 @@
         <image name="Screen4text1" width="118" height="56"/>
         <image name="Screen4text2" width="118" height="70"/>
         <image name="Screen4text3" width="118" height="56"/>
+        <image name="Screen5text1" width="207" height="37"/>
+        <image name="Screen5text2" width="289" height="48"/>
         <image name="Start with 30-50% reduction from   normal starting dose" width="250" height="54"/>
         <image name="Start with 30-70% reduction from   normal starting dose" width="250" height="54"/>
         <image name="Start with normal starting dose" width="235" height="36"/>
