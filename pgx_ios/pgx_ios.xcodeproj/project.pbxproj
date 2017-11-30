@@ -14,6 +14,7 @@
 		016C34771F8EDA9800D0D5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016C34751F8EDA9800D0D5A6 /* LaunchScreen.storyboard */; };
 		FA0897F51FA247650071E488 /* DosageCalculatorTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */; };
 		FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */; };
+		FA1C7E881FD0612A00F07BE1 /* Sceen9VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C7E871FD0612A00F07BE1 /* Sceen9VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		016C34781F8EDA9800D0D5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalculatorTemplate.swift; sourceTree = "<group>"; };
 		FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalcViewController.swift; sourceTree = "<group>"; };
+		FA1C7E871FD0612A00F07BE1 /* Sceen9VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sceen9VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				016C34781F8EDA9800D0D5A6 /* Info.plist */,
 				FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */,
 				FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */,
+				FA1C7E871FD0612A00F07BE1 /* Sceen9VC.swift */,
 			);
 			path = pgx_ios;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				FA0897F51FA247650071E488 /* DosageCalculatorTemplate.swift in Sources */,
 				016C346F1F8EDA9800D0D5A6 /* ViewController.swift in Sources */,
+				FA1C7E881FD0612A00F07BE1 /* Sceen9VC.swift in Sources */,
 				FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */,
 				016C346D1F8EDA9800D0D5A6 /* AppDelegate.swift in Sources */,
 			);

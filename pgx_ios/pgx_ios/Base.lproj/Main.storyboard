@@ -173,7 +173,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YM9-lR-O3b" kind="show" id="DyK-vy-ULu"/>
+                                    <segue destination="YM9-lR-O3b" kind="show" id="Wcj-J0-2tb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s28-Oq-dSA">
@@ -221,22 +221,22 @@
                                         <rect key="frame" x="8" y="54" width="192" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3C-Yc-8tz">
-                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ryb-Dh-cdj">
-                                                <rect key="frame" x="62.5" y="0.0" width="56" height="30"/>
+                                                <rect key="frame" x="61.5" y="0.0" width="58" height="30"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <action selector="DoseEntered:" destination="YM9-lR-O3b" eventType="editingChanged" id="c6G-Fs-kOG"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MxY-M5-nJP">
-                                                <rect key="frame" x="121.5" y="0.0" width="70.5" height="30"/>
+                                                <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -336,22 +336,22 @@
                                         <rect key="frame" x="8" y="92" width="192" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxp-fK-NOv">
-                                                <rect key="frame" x="0.0" y="0.0" width="65" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77b-4e-wNZ">
-                                                <rect key="frame" x="70" y="0.0" width="66.5" height="30"/>
+                                                <rect key="frame" x="69" y="0.0" width="68" height="30"/>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <action selector="DoseWeightEntered:" destination="YM9-lR-O3b" eventType="editingChanged" id="OXQ-62-Ggj"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-k2-j25">
-                                                <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
+                                                <rect key="frame" x="142" y="0.0" width="50" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -365,8 +365,8 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="I2S-DT-5Do"/>
                                             <constraint firstAttribute="height" constant="30" id="W5T-Ne-jso"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8F-a3-tzi">
@@ -392,7 +392,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="OnF-UY-bgr"/>
                                             <constraint firstAttribute="height" constant="30" id="ydF-hg-qLA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -476,48 +476,41 @@
                                     <constraint firstItem="2yD-0T-yN7" firstAttribute="top" secondItem="W0I-lU-lrh" secondAttribute="bottom" constant="15" id="ywx-CR-lFL"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 2 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="oOY-kr-jib">
-                                <rect key="frame" x="33" y="292" width="264" height="37"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adult 2.5 mg-kg daily" translatesAutoresizingMaskIntoConstraints="NO" id="POP-7p-zIu">
-                                <rect key="frame" x="63" y="202" width="153" height="19"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatric 1.25-2.5 mg-kg (50-70 mg-m2) daily" translatesAutoresizingMaskIntoConstraints="NO" id="lsr-9c-pXb">
-                                <rect key="frame" x="63" y="242" width="182" height="37"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recommendations" translatesAutoresizingMaskIntoConstraints="NO" id="bEC-bD-Me4">
-                                <rect key="frame" x="33" y="117" width="172" height="47"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Normal Metabolizer" translatesAutoresizingMaskIntoConstraints="NO" id="QqZ-AP-Tng">
-                                <rect key="frame" x="32" y="62" width="174" height="47"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Start with normal starting dose" translatesAutoresizingMaskIntoConstraints="NO" id="7xW-QB-zdf">
-                                <rect key="frame" x="33" y="166" width="231" height="36"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pP0-oS-hgY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="y75-k0-PGG">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="JxU-FR-KVx">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="TTZ-0J-FKO"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="FeL-qc-0uz">
+                                            <connections>
+                                                <action selector="homeBtnPressed:" destination="YM9-lR-O3b" id="RaB-0n-aBW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Normal" translatesAutoresizingMaskIntoConstraints="NO" id="yBh-Bm-LvY">
+                                <rect key="frame" x="44" y="107" width="303" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8sU-A2-aiO"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="olM-t4-iyk" firstAttribute="trailing" secondItem="oOY-kr-jib" secondAttribute="trailing" constant="78" id="0sV-gS-d4p"/>
-                            <constraint firstItem="oOY-kr-jib" firstAttribute="top" secondItem="lsr-9c-pXb" secondAttribute="bottom" constant="13" id="2hJ-yw-GpY"/>
-                            <constraint firstItem="bEC-bD-Me4" firstAttribute="top" secondItem="QqZ-AP-Tng" secondAttribute="bottom" constant="8" id="2lj-mW-Xci"/>
-                            <constraint firstItem="olM-t4-iyk" firstAttribute="trailing" secondItem="QqZ-AP-Tng" secondAttribute="trailing" constant="169" id="3fj-LA-nIE"/>
-                            <constraint firstItem="7xW-QB-zdf" firstAttribute="top" secondItem="bEC-bD-Me4" secondAttribute="bottom" constant="2" id="636-c6-rPT"/>
-                            <constraint firstItem="olM-t4-iyk" firstAttribute="trailing" secondItem="bEC-bD-Me4" secondAttribute="trailing" constant="170" id="Ckf-jN-3zv"/>
-                            <constraint firstItem="POP-7p-zIu" firstAttribute="top" secondItem="7xW-QB-zdf" secondAttribute="bottom" id="FT7-Rk-56x"/>
-                            <constraint firstItem="bEC-bD-Me4" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" constant="33" id="Hyc-cO-AHm"/>
-                            <constraint firstItem="lsr-9c-pXb" firstAttribute="top" secondItem="POP-7p-zIu" secondAttribute="bottom" constant="21" id="Mh8-Y9-MlO"/>
+                            <constraint firstItem="pP0-oS-hgY" firstAttribute="trailing" secondItem="olM-t4-iyk" secondAttribute="trailing" id="LAb-Ty-dQG"/>
                             <constraint firstItem="9aG-d8-fpR" firstAttribute="trailing" secondItem="olM-t4-iyk" secondAttribute="trailing" id="PUQ-ti-JGw"/>
-                            <constraint firstItem="7xW-QB-zdf" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" constant="33" id="blJ-Rz-at9"/>
+                            <constraint firstItem="yBh-Bm-LvY" firstAttribute="top" secondItem="olM-t4-iyk" secondAttribute="top" constant="87" id="Xja-Xr-9i1"/>
+                            <constraint firstItem="pP0-oS-hgY" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" id="bwz-fw-iOy"/>
                             <constraint firstItem="9aG-d8-fpR" firstAttribute="bottom" secondItem="olM-t4-iyk" secondAttribute="bottom" id="cxr-B2-FAB"/>
-                            <constraint firstItem="olM-t4-iyk" firstAttribute="trailing" secondItem="7xW-QB-zdf" secondAttribute="trailing" constant="111" id="gH4-PL-Ubj"/>
-                            <constraint firstItem="olM-t4-iyk" firstAttribute="trailing" secondItem="lsr-9c-pXb" secondAttribute="trailing" constant="130" id="j6X-d4-RQX"/>
-                            <constraint firstItem="olM-t4-iyk" firstAttribute="trailing" secondItem="POP-7p-zIu" secondAttribute="trailing" constant="159" id="jnU-YO-cQU"/>
-                            <constraint firstItem="oOY-kr-jib" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" constant="33" id="oQg-Tw-U4o"/>
-                            <constraint firstItem="QqZ-AP-Tng" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" constant="32" id="pVV-ek-tmI"/>
-                            <constraint firstItem="lsr-9c-pXb" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" constant="63" id="tFj-6A-fMV"/>
+                            <constraint firstItem="pP0-oS-hgY" firstAttribute="top" secondItem="olM-t4-iyk" secondAttribute="top" id="hiu-5X-vMk"/>
+                            <constraint firstItem="olM-t4-iyk" firstAttribute="trailing" secondItem="yBh-Bm-LvY" secondAttribute="trailing" constant="28" id="kbD-OB-E8j"/>
                             <constraint firstItem="9aG-d8-fpR" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" id="wPv-D9-Sd1"/>
-                            <constraint firstItem="QqZ-AP-Tng" firstAttribute="top" secondItem="olM-t4-iyk" secondAttribute="top" constant="42" id="xS5-lY-JYO"/>
-                            <constraint firstItem="POP-7p-zIu" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" constant="63" id="z2n-Q1-m7S"/>
+                            <constraint firstItem="yBh-Bm-LvY" firstAttribute="leading" secondItem="olM-t4-iyk" secondAttribute="leading" constant="44" id="wzi-sA-jfr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="olM-t4-iyk"/>
                     </view>
@@ -536,11 +529,12 @@
                         <outlet property="LiqVolTypeTxt" destination="mK4-yT-VmZ" id="qBo-LD-vcV"/>
                         <outlet property="WeightTypeTxt" destination="dCb-k2-j25" id="gms-hl-Tax"/>
                         <outlet property="view1" destination="9aG-d8-fpR" id="Idh-eN-3DP"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackToHomeScreen" id="Vsg-Kq-W7v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOx-ie-6nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="700" y="1902"/>
+            <point key="canvasLocation" x="668" y="1898.5007496251876"/>
         </scene>
         <!--Dosage Calc View Controller-->
         <scene sceneID="6Vq-B8-2hG">
@@ -705,10 +699,10 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Rox-no-vrW"/>
-                                            <constraint firstAttribute="width" constant="53" id="qsm-yx-VI4"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="qsm-yx-VI4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMS-Po-Mnb">
@@ -732,9 +726,9 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="NxK-K5-LTd"/>
-                                            <constraint firstAttribute="width" constant="53" id="TQo-VG-31M"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="TQo-VG-31M"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -839,6 +833,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="In those who require a dosage reduction  based on myelosuppression, the median  dose may be ~40% lower." translatesAutoresizingMaskIntoConstraints="NO" id="8Vc-c3-utm">
                                 <rect key="frame" x="42" y="332" width="296" height="55"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Xt-zX-ExI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Mry-T5-Bkr">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="kHa-eU-94X">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="y6l-gx-e4S"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="fWY-i2-AJ9"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -924,6 +932,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseEntered:" destination="kCE-za-pT0" eventType="editingDidEnd" id="KrE-6Y-OMK"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckI-ob-FrY">
                                                 <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
@@ -983,6 +994,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqMedAmt:" destination="kCE-za-pT0" eventType="editingDidEnd" id="PIF-mK-fXq"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YMy-Hn-6vC">
                                                 <rect key="frame" x="56.5" y="0.0" width="45.5" height="30"/>
@@ -1000,6 +1014,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqPerVol:" destination="kCE-za-pT0" eventType="editingDidEnd" id="ifR-Fm-sbz"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3E9-da-2CQ">
                                                 <rect key="frame" x="60.5" y="0.0" width="41" height="30"/>
@@ -1029,6 +1046,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseWeightEntered:" destination="kCE-za-pT0" eventType="editingDidEnd" id="hoj-mW-VJO"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-Cb-pou">
                                                 <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
@@ -1043,10 +1063,10 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="B59-RA-iqL"/>
-                                            <constraint firstAttribute="width" constant="53" id="sWH-kS-4fm"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="sWH-kS-4fm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9fJ-f4-hQh">
@@ -1061,15 +1081,18 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="kCE-za-pT0" eventType="touchUpInside" id="2w3-ul-OWo"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUF-Dg-nAs">
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="88p-BU-fbr"/>
-                                            <constraint firstAttribute="width" constant="53" id="vac-tX-fuV"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="vac-tX-fuV"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1174,6 +1197,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="May cautiously increase to 3 mg-kg daily  if no response after 4 weeks." translatesAutoresizingMaskIntoConstraints="NO" id="2jN-5a-gLy">
                                 <rect key="frame" x="32" y="342" width="298" height="37"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EA8-0S-woY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Wql-Ox-U9o">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="E1w-jp-Nq5">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="lco-cn-qDf"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="H6T-da-ea1"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1256,6 +1293,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseEntered:" destination="cpr-S2-gj0" eventType="editingDidEnd" id="znH-ja-nU6"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U7b-3X-Pqw">
                                                 <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
@@ -1315,6 +1355,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqMedAmt:" destination="cpr-S2-gj0" eventType="editingDidEnd" id="ke8-pe-bcb"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ecg-nB-cKK">
                                                 <rect key="frame" x="56.5" y="0.0" width="45.5" height="30"/>
@@ -1332,6 +1375,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqPerVol:" destination="cpr-S2-gj0" eventType="editingDidEnd" id="W1g-F3-jmr"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l93-RJ-vur">
                                                 <rect key="frame" x="60.5" y="0.0" width="41" height="30"/>
@@ -1361,6 +1407,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseWeightEntered:" destination="cpr-S2-gj0" eventType="editingDidEnd" id="aoH-gL-8p8"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aMw-cg-Sfo">
                                                 <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
@@ -1375,10 +1424,10 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="UZR-Tp-Lc7"/>
-                                            <constraint firstAttribute="width" constant="53" id="vKq-61-o8v"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="vKq-61-o8v"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CM8-5W-sMi">
@@ -1393,15 +1442,18 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="cpr-S2-gj0" eventType="touchUpInside" id="cf2-0c-75m"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7fV-sg-t7u">
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="bdZ-x7-wER"/>
-                                            <constraint firstAttribute="width" constant="53" id="j7p-sD-8HB"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="j7p-sD-8HB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1503,6 +1555,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 2-4 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="5Fj-pc-WhC">
                                 <rect key="frame" x="42" y="284" width="278" height="37"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rNY-HG-q36">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="FYQ-OT-UxC">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="26b-I5-cgN">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="Wai-0a-IfV"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="cRr-2R-SDX"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1582,6 +1648,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseEntered:" destination="0Q1-vq-fiq" eventType="editingDidEnd" id="hTg-l3-hsk"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cid-wZ-z7u">
                                                 <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
@@ -1641,6 +1710,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqMedAmt:" destination="0Q1-vq-fiq" eventType="editingDidEnd" id="92G-pP-jVz"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o4t-5G-h2m">
                                                 <rect key="frame" x="56.5" y="0.0" width="45.5" height="30"/>
@@ -1658,6 +1730,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqPerVol:" destination="0Q1-vq-fiq" eventType="editingDidEnd" id="JpS-e6-bZW"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mB7-J4-d7E">
                                                 <rect key="frame" x="60.5" y="0.0" width="41" height="30"/>
@@ -1687,6 +1762,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseWeightEntered:" destination="0Q1-vq-fiq" eventType="editingDidEnd" id="vt5-ht-Dg0"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F5s-ak-UdP">
                                                 <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
@@ -1700,11 +1778,11 @@
                                         <rect key="frame" x="220" y="133" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="aef-22-1Oe"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="aef-22-1Oe"/>
                                             <constraint firstAttribute="height" constant="30" id="ggL-6b-wmK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcX-9E-LcZ">
@@ -1719,15 +1797,18 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="0Q1-vq-fiq" eventType="touchUpInside" id="JB2-hb-oPD"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67u-PD-b9b">
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="UqW-aM-zif"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="UqW-aM-zif"/>
                                             <constraint firstAttribute="height" constant="30" id="mVQ-NK-zna"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1817,22 +1898,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recommendations" translatesAutoresizingMaskIntoConstraints="NO" id="FSx-Bp-ZLN">
                                 <rect key="frame" x="43" y="105" width="172" height="47"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m2q-90-gZ3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m2q-90-gZ3">
                                 <rect key="frame" x="42" y="135" width="297" height="76"/>
-                                <string key="image">For malignancy, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily</string>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adult 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-OD-mxG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Adult 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="DMv-OD-mxG">
                                 <rect key="frame" x="75" y="218" width="253" height="19"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatric 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-Rx-ZkM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pediatric 0.2 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="3hh-Rx-ZkM">
                                 <rect key="frame" x="75" y="245" width="278" height="19"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-Mq-YST">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-Mq-YST">
                                 <rect key="frame" x="42" y="284" width="278" height="37"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="uY1-d0-TzY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="uY1-d0-TzY">
                                 <rect key="frame" x="42" y="332" width="268" height="57"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aka-1B-UUK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="cmi-Ta-Uia">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ZWj-Gs-P0H">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="lt1-eL-I7u"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="ySP-z1-c6B"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1915,6 +2009,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseEntered:" destination="Yuc-gr-F9Y" eventType="editingDidEnd" id="eaQ-Je-UL5"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ckq-cn-zh5">
                                                 <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
@@ -1974,6 +2071,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqMedAmt:" destination="Yuc-gr-F9Y" eventType="editingDidEnd" id="D3S-QX-Nie"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoK-Tn-dUy">
                                                 <rect key="frame" x="56.5" y="0.0" width="45.5" height="30"/>
@@ -1991,6 +2091,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqPerVol:" destination="Yuc-gr-F9Y" eventType="editingDidEnd" id="ona-MC-dyH"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TGD-bR-PgI">
                                                 <rect key="frame" x="60.5" y="0.0" width="41" height="30"/>
@@ -2020,6 +2123,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseWeightEntered:" destination="Yuc-gr-F9Y" eventType="editingDidEnd" id="Ndg-eE-mdY"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="69n-H0-PhP">
                                                 <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
@@ -2033,11 +2139,11 @@
                                         <rect key="frame" x="220" y="133" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="UKi-Ad-3Iu"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="UKi-Ad-3Iu"/>
                                             <constraint firstAttribute="height" constant="30" id="lJw-co-CGY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ib-ZM-ObT">
@@ -2052,15 +2158,18 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="Yuc-gr-F9Y" eventType="touchUpInside" id="uC1-PO-gIe"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL7-oM-fLN">
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="St3-9A-YyM"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="St3-9A-YyM"/>
                                             <constraint firstAttribute="height" constant="30" id="XtQ-as-fTx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2171,6 +2280,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatric 2 mg-kg daily" translatesAutoresizingMaskIntoConstraints="NO" id="bHu-ya-Ah6">
                                 <rect key="frame" x="72" y="362" width="165" height="19"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X10-uR-JM2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="Euh-Cb-mkm">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Qtx-sO-mlf">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="ho1-4a-iQn"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="YHu-2M-68y"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2259,6 +2382,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseEntered:" destination="6VX-vq-fl0" eventType="editingDidEnd" id="kMa-Sk-8To"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-mh-nWr">
                                                 <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
@@ -2318,6 +2444,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqMedAmt:" destination="6VX-vq-fl0" eventType="editingDidEnd" id="3S8-20-xCd"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aks-g9-AM2">
                                                 <rect key="frame" x="56.5" y="0.0" width="45.5" height="30"/>
@@ -2335,6 +2464,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqPerVol:" destination="6VX-vq-fl0" eventType="editingDidEnd" id="xZD-1C-cpG"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gQc-tI-f9y">
                                                 <rect key="frame" x="60.5" y="0.0" width="41" height="30"/>
@@ -2364,6 +2496,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseWeightEntered:" destination="6VX-vq-fl0" eventType="editingDidEnd" id="LRe-DU-wAH"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJT-ed-pa0">
                                                 <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
@@ -2378,10 +2513,10 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="kkL-aC-x3X"/>
-                                            <constraint firstAttribute="width" constant="53" id="tVa-Mr-vAJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="tVa-Mr-vAJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lBM-2s-Ui3">
@@ -2396,15 +2531,18 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="6VX-vq-fl0" eventType="touchUpInside" id="3m1-Pr-98s"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yh-d7-gGB">
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="RNn-5P-Aac"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="RNn-5P-Aac"/>
                                             <constraint firstAttribute="height" constant="30" id="qna-xm-dMi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2518,6 +2656,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 2-4 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="z9I-KN-qfV">
                                 <rect key="frame" x="47" y="357" width="278" height="37"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1J-V7-hdv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="9LQ-X4-EZd">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="O1H-r5-tI2">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="Xjp-pw-fcy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="E7a-eA-Dsy"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2609,6 +2761,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseEntered:" destination="Ec1-Cp-FUd" eventType="editingDidEnd" id="B1H-GM-eh3"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eHv-oE-Ks4">
                                                 <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
@@ -2668,6 +2823,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqMedAmt:" destination="Ec1-Cp-FUd" eventType="editingDidEnd" id="3tV-Xy-Yge"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Mi-Hz-8od">
                                                 <rect key="frame" x="56.5" y="0.0" width="45.5" height="30"/>
@@ -2685,6 +2843,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqPerVol:" destination="Ec1-Cp-FUd" eventType="editingDidEnd" id="Gjd-TZ-5Z4"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="miZ-WX-l2t">
                                                 <rect key="frame" x="60.5" y="0.0" width="41" height="30"/>
@@ -2714,6 +2875,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseWeightEntered:" destination="Ec1-Cp-FUd" eventType="editingDidEnd" id="fcb-8B-64R"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qik-JY-wGR">
                                                 <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
@@ -2728,10 +2892,10 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="e6q-SF-Spq"/>
-                                            <constraint firstAttribute="width" constant="53" id="lw0-1A-mfm"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="lw0-1A-mfm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Drx-KQ-6LW">
@@ -2746,15 +2910,18 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="Ec1-Cp-FUd" eventType="touchUpInside" id="Ca2-uL-MwE"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjV-j8-uwr">
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="53" id="SI9-G4-5lE"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="SI9-G4-5lE"/>
                                             <constraint firstAttribute="height" constant="30" id="c6V-2f-Gmx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2871,6 +3038,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="9g1-K6-Qmk">
                                 <rect key="frame" x="42" y="357" width="278" height="37"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0k-px-1Xg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="AXb-dc-hN7">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="jES-yx-FkH">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="yAj-Ds-Qb3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Home" id="4m7-X3-zY7"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2965,6 +3146,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseEntered:" destination="dYi-Qc-b3S" eventType="editingDidEnd" id="dMz-GP-y24"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg/kg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S6T-D0-FCv">
                                                 <rect key="frame" x="122.5" y="0.0" width="69.5" height="30"/>
@@ -3024,6 +3208,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqMedAmt:" destination="dYi-Qc-b3S" eventType="editingDidEnd" id="RWe-Vh-KYL"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dQb-tC-boG">
                                                 <rect key="frame" x="56.5" y="0.0" width="45.5" height="30"/>
@@ -3041,6 +3228,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="LiqPerVol:" destination="dYi-Qc-b3S" eventType="editingDidEnd" id="Bwz-5F-b6Z"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMN-CO-c7G">
                                                 <rect key="frame" x="60.5" y="0.0" width="41" height="30"/>
@@ -3070,6 +3260,9 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="DoseWeightEntered:" destination="dYi-Qc-b3S" eventType="editingDidEnd" id="qjE-rD-DCf"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="lbs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hmt-OV-19q">
                                                 <rect key="frame" x="141.5" y="0.0" width="50.5" height="30"/>
@@ -3084,10 +3277,10 @@
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="S3W-tT-bjL"/>
-                                            <constraint firstAttribute="width" constant="53" id="W1X-Q6-KnL"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="W1X-Q6-KnL"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="2" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TH6-c0-6zf">
@@ -3102,6 +3295,9 @@
                                         <state key="normal" title="Calculate">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="dYi-Qc-b3S" eventType="touchUpInside" id="GMT-lO-8zW"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9P-re-WgM">
                                         <rect key="frame" x="220" y="73" width="53" height="30"/>
@@ -3110,7 +3306,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="53" id="Kc3-Ol-Lld"/>
                                             <constraint firstAttribute="height" constant="30" id="px5-4v-POd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3200,22 +3396,35 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Recommendations" translatesAutoresizingMaskIntoConstraints="NO" id="iYm-tb-EzN">
                                 <rect key="frame" x="43" y="105" width="172" height="47"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adult 0.25 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="RsJ-YQ-ZEo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Adult 0.25 mg-kg three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="RsJ-YQ-ZEo">
                                 <rect key="frame" x="75" y="213" width="261" height="19"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pediatric 0.125-0.25 mg-kg (5-7 mg-m2) three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="g3d-FM-DfL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pediatric 0.125-0.25 mg-kg (5-7 mg-m2) three times weekly" translatesAutoresizingMaskIntoConstraints="NO" id="g3d-FM-DfL">
                                 <rect key="frame" x="75" y="236" width="224" height="37"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="lyP-wj-DXG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Allow 4-6 weeks to reach steady state  after each dose adjustment." translatesAutoresizingMaskIntoConstraints="NO" id="lyP-wj-DXG">
                                 <rect key="frame" x="42" y="284" width="278" height="37"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="kEc-mV-k0r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." translatesAutoresizingMaskIntoConstraints="NO" id="kEc-mV-k0r">
                                 <rect key="frame" x="42" y="332" width="268" height="57"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bot-Gl-HgA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bot-Gl-HgA">
                                 <rect key="frame" x="42" y="135" width="297" height="76"/>
-                                <string key="image">For malignancy, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily</string>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uPW-pq-DWR">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem id="ddj-2R-xQi">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="cYc-6r-A1q">
+                                            <connections>
+                                                <action selector="backBtnPressed:" destination="YM9-lR-O3b" id="x1i-k8-W0y"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Return to Get Started" id="ai3-Mh-bou"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -3600,6 +3809,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Allele2"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agm-Cc-4MS">
+                                <rect key="frame" x="169" y="349" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TEST"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ixd-Xa-A0O"/>
@@ -3636,15 +3850,10 @@
         <image name="Adult 1 mg-kg daily" width="144" height="19"/>
         <image name="Adult 1-1.4 mg-kg daily" width="173" height="19"/>
         <image name="Adult 2 mg-kg daily" width="144" height="19"/>
-        <image name="Adult 2.5 mg-kg daily" width="158" height="19"/>
         <image name="Adult 3-5 mg-kg daily" width="159" height="19"/>
-        <image name="Allow 2 weeks to reach steady state  after each dose adjustment." width="267" height="37"/>
         <image name="Allow 2-4 weeks to reach steady state  after each dose adjustment." width="283" height="37"/>
         <image name="Allow 4-6 weeks to reach steady state  after each dose adjustment." width="283" height="37"/>
         <image name="Consider alternate therapy." width="218" height="19"/>
-        <image width="298" height="76">
-            <string key="name">For malignancy, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily</string>
-        </image>
         <image name="For nonmalignant conditions, consider alternative nonthiopurine immunosuppressant therapy." width="267" height="57"/>
         <image name="If used, reduce daily dose by   10-fold from normal starting dose and  reduce frequency to thrice weekly   instead of daily" width="298" height="76"/>
         <image name="Immunosuppressant-Kidney  Transplantation" width="212" height="54"/>
@@ -3653,6 +3862,7 @@
         <image name="Intermediate Metabolizer" width="222" height="47"/>
         <image name="Juvenile Idiopathic Arthritis" width="203" height="36"/>
         <image name="May cautiously increase to 3 mg-kg daily  if no response after 4 weeks." width="302" height="37"/>
+        <image name="Normal" width="630" height="516"/>
         <image name="Normal Metabolizer" width="175" height="47"/>
         <image name="Pediatric 0.1 mg-kg three times weekly" width="247" height="16"/>
         <image name="Pediatric 0.125-0.25 mg-kg (5-7 mg-m2) three times weekly" width="225" height="37"/>
@@ -3660,7 +3870,6 @@
         <image name="Pediatric 0.3-0.7 mg-kg daily" width="211" height="19"/>
         <image name="Pediatric 0.375-1.75 mg-kg (15-49 mg-m2) daily" width="204" height="37"/>
         <image name="Pediatric 1-1.4 mg-kg daily" width="198" height="19"/>
-        <image name="Pediatric 1.25-2.5 mg-kg (50-70 mg-m2) daily" width="187" height="37"/>
         <image name="Pediatric 2 mg-kg daily" width="169" height="19"/>
         <image name="Poor Metabolizer" width="153" height="47"/>
         <image name="Recommendations" width="175" height="47"/>

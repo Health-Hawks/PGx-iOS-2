@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import UIKit
+import Darwin
+
+
 
 //possible class to hold the dosage calculator for resuse on multiple pages to reduce redundancy 
 
