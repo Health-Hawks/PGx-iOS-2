@@ -34,10 +34,12 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     @IBAction func Allele1BtnPressed(_ sender: Any) {
         Allele1Picker.isHidden = false
+        Allele2Picker.isHidden = true
     }
     
     @IBAction func Allele2BtnPressed(_ sender: Any) {
         Allele2Picker.isHidden = false
+        Allele1Picker.isHidden = true
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
