@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
     
+    var selectedGene = ""
+    var selectedDrug = ""
+    var selectedAllele1 = ""
+    var selectedAllele2 = ""
+    
     @IBOutlet weak var Allele1PickerBtn: UIButton!
     @IBOutlet weak var Allele2PickerBtn: UIButton!
     @IBOutlet weak var Allele1Picker: UIPickerView!
@@ -24,6 +29,8 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         Allele2Picker?.dataSource = self
         Allele1Picker?.delegate = self
         Allele2Picker?.delegate = self
+        print(selectedDrug)
+        print(selectedGene)
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -63,17 +70,22 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == Allele1Picker){
             Allele1PickerBtn.setTitle(allele1[row], for: UIControlState.normal)
+            selectedAllele1 = allele1[row]
             Allele1Picker.isHidden = true
         }
         else if (pickerView == Allele2Picker){
             Allele2PickerBtn.setTitle(allele2[row], for: UIControlState.normal)
+            selectedAllele2 = allele2[row]
             Allele2Picker.isHidden = true
         }
         else{
             print("error")
         }
+    }
+    
+    //logic for iff statement to determine metabolizer pages
 }
-}
+
         
         
         

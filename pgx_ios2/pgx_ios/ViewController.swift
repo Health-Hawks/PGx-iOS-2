@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
-
+    var selectedDrug = ""
+    var selectedGene = ""
     
     @IBOutlet weak var GenePicker: UIPickerView!
     @IBOutlet weak var GenePickerBtn: UIButton!
@@ -70,15 +70,29 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == GenePicker){
             GenePickerBtn.setTitle(genes[row], for: UIControlState.normal)
+            selectedGene = genes[row]
             GenePicker.isHidden = true
         }
         else if (pickerView == DrugPicker){
             DrugPickerBtn.setTitle(drugs[row], for: UIControlState.normal)
+            selectedDrug = drugs[row]
             DrugPicker.isHidden = true
         }
         else{
             print("error")
         }
+    }
+    @IBAction func drugNextPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "AlleleViewController", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! AlleleViewController
+        destinationVC.selectedGene = selectedGene
+        destinationVC.selectedDrug = selectedDrug
+        //selectedGene
+        //selectedDrug
+        
     }
 }
 

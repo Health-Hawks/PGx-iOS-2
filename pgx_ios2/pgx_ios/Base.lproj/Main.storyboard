@@ -3530,7 +3530,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="NextNav"/>
                                 <connections>
-                                    <segue destination="GIa-a6-p07" kind="show" id="9QW-E5-Beb"/>
+                                    <action selector="drugNextPressed:" destination="8zB-41-42w" eventType="touchUpInside" id="bki-ZJ-yNK"/>
+                                    <segue destination="GIa-a6-p07" kind="show" identifier="AlleleViewController" id="9QW-E5-Beb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3683,6 +3684,6 @@
         <image name="screen7title" width="222" height="99"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="k81-Nu-eOJ"/>
+        <segue reference="hU5-hz-oA0"/>
     </inferredMetricsTieBreakers>
 </document>
