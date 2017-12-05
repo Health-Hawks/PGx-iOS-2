@@ -1,19 +1,17 @@
 //
-//  ViewController.swift
-//  DosageCalc
+//  Screen13VC.swift
+//  pgx_ios
 //
-//  Created by Shane Forler on 10/24/17.
-//  Copyright © 2017 Shane Forler. All rights reserved.
+//  Created by Shane Forler on 12/4/17.
+//  Copyright © 2017 Tabor Scott. All rights reserved.
 //
-// Need to add cancel button or ability to click out of uipicker
 
 import UIKit
 import Foundation
 import Darwin
 
-class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate{
-    
 
+class Screen13VC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     func log(i: Double) -> Double {
         return Darwin.log(i) * M_LN10
@@ -38,21 +36,21 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     func eTo(x:Double) -> Double{
         return exp(x)
     }
-
+    
     @IBAction func backBtnPressed(_ sender: Any) {
         // add self.
         dismiss(animated: true, completion: nil)
     }
- 
+    
     
     @IBAction func homeBtnPressed(_ sender: Any) {
-        performSegue(withIdentifier: "HomefromS8", sender: self)
+        performSegue(withIdentifier: "HomefromS13", sender: self)
         // works but the redundant unlike dismiss ??
     }
     
     @IBOutlet weak var view1: UIView!
     //Spinner selections
-
+    
     @IBOutlet weak var DosageWeightTxt: UITextField!
     @IBOutlet weak var WeightTypeTxt: UITextField!
     @IBOutlet weak var LiqMedWeightTxt: UITextField!
@@ -91,8 +89,8 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     var PatDose = ""
     var PatMedAmt = ""
     var PatPerVol = ""
-
-      // actions
+    
+    // actions
     
     @IBAction func DoseEntered(_ sender: Any) {
         PatDose = EnteredDosageTxt.text!
@@ -119,7 +117,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     @IBAction func btnPressed(_ sender: Any) {
         
-
+        
         // UI picker for which dosage format is picked
         switch DosageWeightTxt.text{
         case "mg/kg"?:
@@ -172,7 +170,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             }
         case .none:
             runningWeight = ""
-            // or nil?
+        // or nil?
         default:
             runningWeight = "\(Double(PatWeight)! * 1)"
         }
@@ -180,7 +178,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         // UI picker value for which med amount format is picked
         switch LiqMedWeightTxt.text {
         case "mg"?:
-
+            
             if PatMedAmt.isEmpty {
                 errormsg2 = "error"
                 print("error")
@@ -287,7 +285,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             default:
                 FinalDose = (output1 / 1)
             }
-
+            
             switch DecPercTxt.text{
             case "0"?:
                 DosageOutputLbl.text = String(format: "%.f", FinalDose)
@@ -302,8 +300,8 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
             default:
                 DosageOutputLbl.text = String(format: "%.2f", FinalDose)
             }
-
-            }
+            
+        }
         
         if errormsg2.isEmpty{
             
@@ -375,7 +373,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     let LiqDoseFreq = ["L BID","L Daily","L QID","L TID","L q1 hr","L q2 hr","L q4 hr","mL BID","mL Daily","mL QID","mL TID","mL q1 hr","mL q2 hr","mL q4 hr"]
     
     let DecPerc = ["0","1","2","3"]
-
+    
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
@@ -398,7 +396,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //.numberPad
         EnteredDosageTxt.delegate = self
         EnteredDosageTxt.keyboardType = UIKeyboardType.decimalPad
@@ -456,10 +454,10 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         DecPercView.delegate = self
         DecPercView.tag = 7
         DecPercTxt.inputView = DecPercView
-    
+        
     }
     
-
+    
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -541,5 +539,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     }
     
 }
+
+
 
 

@@ -15,6 +15,15 @@
 		018207621FC4CAA7006161E9 /* AlleleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018207611FC4CAA7006161E9 /* AlleleViewController.swift */; };
 		FA0897F51FA247650071E488 /* DosageCalculatorTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */; };
 		FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */; };
+		FA1CF4DC1FD60F850037CA25 /* Screen10VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4DB1FD60F850037CA25 /* Screen10VC.swift */; };
+		FA1CF4DE1FD610120037CA25 /* Screen16VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4DD1FD610120037CA25 /* Screen16VC.swift */; };
+		FA1CF4E01FD610270037CA25 /* Screen15VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4DF1FD610270037CA25 /* Screen15VC.swift */; };
+		FA1CF4E21FD610380037CA25 /* Screen14VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4E11FD610380037CA25 /* Screen14VC.swift */; };
+		FA1CF4E41FD610470037CA25 /* Screen13VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4E31FD610470037CA25 /* Screen13VC.swift */; };
+		FA1CF4E61FD6105A0037CA25 /* Screen12VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4E51FD6105A0037CA25 /* Screen12VC.swift */; };
+		FA1CF4E91FD610BB0037CA25 /* Screen11VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4E81FD610BB0037CA25 /* Screen11VC.swift */; };
+		FA4B0E5A1FD06F580085812C /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B0E591FD06F580085812C /* GetStartedViewController.swift */; };
+		FA4B0E5C1FD1153A0085812C /* SubCalcVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B0E5B1FD1153A0085812C /* SubCalcVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,15 @@
 		018207611FC4CAA7006161E9 /* AlleleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlleleViewController.swift; sourceTree = "<group>"; };
 		FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalculatorTemplate.swift; sourceTree = "<group>"; };
 		FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalcViewController.swift; sourceTree = "<group>"; };
+		FA1CF4DB1FD60F850037CA25 /* Screen10VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen10VC.swift; sourceTree = "<group>"; };
+		FA1CF4DD1FD610120037CA25 /* Screen16VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen16VC.swift; sourceTree = "<group>"; };
+		FA1CF4DF1FD610270037CA25 /* Screen15VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen15VC.swift; sourceTree = "<group>"; };
+		FA1CF4E11FD610380037CA25 /* Screen14VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen14VC.swift; sourceTree = "<group>"; };
+		FA1CF4E31FD610470037CA25 /* Screen13VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen13VC.swift; sourceTree = "<group>"; };
+		FA1CF4E51FD6105A0037CA25 /* Screen12VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen12VC.swift; sourceTree = "<group>"; };
+		FA1CF4E81FD610BB0037CA25 /* Screen11VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen11VC.swift; sourceTree = "<group>"; };
+		FA4B0E591FD06F580085812C /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		FA4B0E5B1FD1153A0085812C /* SubCalcVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCalcVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,7 @@
 		016C346B1F8EDA9800D0D5A6 /* pgx_ios */ = {
 			isa = PBXGroup;
 			children = (
+				FA1CF4E71FD610A10037CA25 /* CalculatorVC's */,
 				016C346C1F8EDA9800D0D5A6 /* AppDelegate.swift */,
 				016C346E1F8EDA9800D0D5A6 /* ViewController.swift */,
 				018207611FC4CAA7006161E9 /* AlleleViewController.swift */,
@@ -68,9 +87,25 @@
 				016C34751F8EDA9800D0D5A6 /* LaunchScreen.storyboard */,
 				016C34781F8EDA9800D0D5A6 /* Info.plist */,
 				FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */,
+				FA4B0E591FD06F580085812C /* GetStartedViewController.swift */,
 				FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */,
+				FA4B0E5B1FD1153A0085812C /* SubCalcVC.swift */,
+				FA1CF4DB1FD60F850037CA25 /* Screen10VC.swift */,
+				FA1CF4DD1FD610120037CA25 /* Screen16VC.swift */,
+				FA1CF4DF1FD610270037CA25 /* Screen15VC.swift */,
+				FA1CF4E11FD610380037CA25 /* Screen14VC.swift */,
+				FA1CF4E31FD610470037CA25 /* Screen13VC.swift */,
+				FA1CF4E51FD6105A0037CA25 /* Screen12VC.swift */,
+				FA1CF4E81FD610BB0037CA25 /* Screen11VC.swift */,
 			);
 			path = pgx_ios;
+			sourceTree = "<group>";
+		};
+		FA1CF4E71FD610A10037CA25 /* CalculatorVC's */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CalculatorVC's";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +180,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1CF4E41FD610470037CA25 /* Screen13VC.swift in Sources */,
 				FA0897F51FA247650071E488 /* DosageCalculatorTemplate.swift in Sources */,
+				FA1CF4E91FD610BB0037CA25 /* Screen11VC.swift in Sources */,
 				018207621FC4CAA7006161E9 /* AlleleViewController.swift in Sources */,
+				FA4B0E5C1FD1153A0085812C /* SubCalcVC.swift in Sources */,
 				016C346F1F8EDA9800D0D5A6 /* ViewController.swift in Sources */,
+				FA4B0E5A1FD06F580085812C /* GetStartedViewController.swift in Sources */,
+				FA1CF4DE1FD610120037CA25 /* Screen16VC.swift in Sources */,
+				FA1CF4E61FD6105A0037CA25 /* Screen12VC.swift in Sources */,
+				FA1CF4DC1FD60F850037CA25 /* Screen10VC.swift in Sources */,
+				FA1CF4E01FD610270037CA25 /* Screen15VC.swift in Sources */,
 				FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */,
+				FA1CF4E21FD610380037CA25 /* Screen14VC.swift in Sources */,
 				016C346D1F8EDA9800D0D5A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
