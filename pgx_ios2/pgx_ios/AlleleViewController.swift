@@ -84,7 +84,665 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     
     //logic for iff statement to determine metabolizer pages
+    
+    @IBAction func NextBtnPressed(_ sender: Any) {
+        if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S1", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S2", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6MP" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purinethol" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Purixan" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "6Mercaptopurine" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S3", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S4", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S5", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6TG" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "6Thioguanine" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        else if (selectedDrug == "Tabloid" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S6", sender: nil)
+        }
+        if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        if (selectedDrug == "Azasan" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        if (selectedDrug == "Imuran" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1S" && selectedAllele2 == "*1S"){
+            performSegue(withIdentifier: "S7", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1S" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1S" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1S" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1S" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*1S" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S8", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azathioprine" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Azasan" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*2"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*3A"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*3B"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*3C"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
+            performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else{
+            print ("error")
+        }
+        
+        
+    }
+    
 }
+
 
         
         
