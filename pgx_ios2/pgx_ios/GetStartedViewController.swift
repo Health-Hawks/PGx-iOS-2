@@ -15,9 +15,9 @@ class GetStartedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getStartedButton.layer.cornerRadius = 25
+        getStartedButton.layer.cornerRadius = 30
         getStartedButton.layer.masksToBounds = true
-        wantToKnowMore.layer.cornerRadius = 25
+        wantToKnowMore.layer.cornerRadius = 30
         wantToKnowMore.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }

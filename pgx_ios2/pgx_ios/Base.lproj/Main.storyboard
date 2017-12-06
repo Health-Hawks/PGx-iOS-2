@@ -3559,8 +3559,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gene" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbL-qm-7yH">
+                                <rect key="frame" x="111" y="97" width="152" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.32947236299514771" green="0.55299973487854004" blue="0.70607751607894897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drug" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lf2-U9-6Xu">
+                                <rect key="frame" x="116" y="159" width="159" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.32947236299514771" green="0.55299973487854004" blue="0.70607751607894897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screen7title" translatesAutoresizingMaskIntoConstraints="NO" id="YlN-5e-Jmc">
-                                <rect key="frame" x="78" y="68" width="229" height="117"/>
+                                <rect key="frame" x="81" y="68" width="229" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="screen7text" translatesAutoresizingMaskIntoConstraints="NO" id="VIX-8f-wca">
@@ -3591,21 +3607,21 @@
                                 <rect key="frame" x="5" y="435" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmu-zM-3OF">
-                                <rect key="frame" x="257" y="0.0" width="145" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="NextNav"/>
-                                <connections>
-                                    <action selector="NextBtnPressed:" destination="GIa-a6-p07" eventType="touchUpInside" id="BXj-EF-Okb"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ygc-e9-GL7">
                                 <rect key="frame" x="0.0" y="24" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="vFB-xu-tZF">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="9EX-bz-gFR"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Next" id="2ns-kM-jTk"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="9EX-bz-gFR">
+                                            <connections>
+                                                <segue destination="8zB-41-42w" kind="show" id="HyB-Y8-XyC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Next" id="2ns-kM-jTk">
+                                            <connections>
+                                                <action selector="NextBtnPressed:" destination="GIa-a6-p07" id="fSh-cG-Zox"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -3618,6 +3634,9 @@
                         <outlet property="Allele1PickerBtn" destination="A7V-jE-YMj" id="Ta0-Vw-fVA"/>
                         <outlet property="Allele2Picker" destination="ZIK-hf-dLV" id="vYc-bs-c8Z"/>
                         <outlet property="Allele2PickerBtn" destination="Mou-Ah-hnX" id="7aw-ls-ltY"/>
+                        <outlet property="DrugUsed" destination="lf2-U9-6Xu" id="kKH-pI-7FW"/>
+                        <outlet property="GeneUsed" destination="RbL-qm-7yH" id="bkK-pX-Osx"/>
+                        <outlet property="toMetabolizerNextButton" destination="2ns-kM-jTk" id="2KX-2R-yiV"/>
                         <segue destination="YM9-lR-O3b" kind="show" identifier="S1" id="B1t-aq-ZcN"/>
                         <segue destination="ibe-PS-bsc" kind="show" identifier="S2" id="KOk-U0-Xoc"/>
                         <segue destination="dYi-Qc-b3S" kind="show" identifier="S3" id="AdY-vY-rob"/>
@@ -3631,7 +3650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asI-VN-P3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2338" y="123"/>
+            <point key="canvasLocation" x="2336.8000000000002" y="122.78860569715144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="U0T-mm-cYK">
@@ -3650,7 +3669,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NextNav" width="91" height="44"/>
         <image name="Screen10" width="632" height="674"/>
         <image name="Screen11" width="646" height="592"/>
         <image name="Screen12" width="630" height="512"/>
@@ -3711,6 +3729,7 @@
         <image name="screen7title" width="222" height="99"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="HyB-Y8-XyC"/>
         <segue reference="hU5-hz-oA0"/>
     </inferredMetricsTieBreakers>
 </document>

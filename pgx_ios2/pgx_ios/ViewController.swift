@@ -20,8 +20,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
     
-    let genes = ["TPMT", "test1", "test2"]
-    let drugs = ["Mercaptopurine", "6MP", "Purinethol", "Purixan", "6Mercaptopurine", "Thioguanine", "6TG", "6Thioguanine", "Tabloid", "Azathioprine", "Azasan", "Imuran"]
+    let genes = ["", "TPMT", "test1", "test2"]
+    let drugs = ["", "Mercaptopurine", "6MP", "Purinethol", "Purixan", "6Mercaptopurine", "Thioguanine", "6TG", "6Thioguanine", "Tabloid", "Azathioprine", "Azasan", "Imuran"]
 
     
     override func viewDidLoad() {
@@ -30,8 +30,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         GenePicker?.delegate = self
         DrugPicker?.dataSource = self
         DrugPicker?.delegate = self
-        
-        // Do any additional setup after loading the view, typically from a nib.
+        //self.GenePicker.selectRow(0, inComponent:0, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,11 +40,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     @IBAction func GenePickerBtnPressed(_ sender: AnyObject) {
         GenePicker.isHidden = false;
+        DrugPicker.isHidden = true
     }
     
 
     @IBAction func DrugPickerBtnPressed(_ sender: Any) {
         DrugPicker.isHidden = false;
+        GenePicker.isHidden = true
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -69,11 +70,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == GenePicker){
+            //self.pickerView(GenePicker, didSelectRow: 0, inComponent: 0)
             GenePickerBtn.setTitle(genes[row], for: UIControlState.normal)
             selectedGene = genes[row]
             GenePicker.isHidden = true
         }
         else if (pickerView == DrugPicker){
+       
             DrugPickerBtn.setTitle(drugs[row], for: UIControlState.normal)
             selectedDrug = drugs[row]
             DrugPicker.isHidden = true

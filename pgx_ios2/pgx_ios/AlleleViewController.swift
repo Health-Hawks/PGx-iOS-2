@@ -15,13 +15,16 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     var selectedAllele1 = ""
     var selectedAllele2 = ""
     
+    @IBOutlet weak var GeneUsed: UILabel!
+    @IBOutlet weak var DrugUsed: UILabel!
     @IBOutlet weak var Allele1PickerBtn: UIButton!
+    @IBOutlet weak var toMetabolizerNextButton: UIBarButtonItem!
     @IBOutlet weak var Allele2PickerBtn: UIButton!
     @IBOutlet weak var Allele1Picker: UIPickerView!
     @IBOutlet weak var Allele2Picker: UIPickerView!
     
-    let allele1 = ["*1", "1S", "*2"]
-    let allele2 = ["*1", "1S", "*2", "3A", "*3B", "*3C", "*4"]
+    let allele1 = ["", "*1", "*1S", "*2"]
+    let allele2 = ["", "*1", "*1S", "*2", "3A", "*3B", "*3C", "*4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,8 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         Allele2Picker?.dataSource = self
         Allele1Picker?.delegate = self
         Allele2Picker?.delegate = self
+        GeneUsed.text = selectedGene
+        DrugUsed.text = selectedDrug
         print(selectedDrug)
         print(selectedGene)
         
@@ -69,6 +74,7 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if (pickerView == Allele1Picker){
+            
             Allele1PickerBtn.setTitle(allele1[row], for: UIControlState.normal)
             selectedAllele1 = allele1[row]
             Allele1Picker.isHidden = true
@@ -83,7 +89,8 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         }
     }
     
-    //logic for iff statement to determine metabolizer pages
+    //logic for if statement to determine metabolizer pages
+    //does 1S need to be *1s?!?!?
     
     @IBAction func NextBtnPressed(_ sender: Any) {
         if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
@@ -735,6 +742,7 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
             performSegue(withIdentifier: "S9", sender: nil)
         }
         else{
+            
             print ("error")
         }
         
