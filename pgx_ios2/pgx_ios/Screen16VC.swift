@@ -392,10 +392,18 @@ class Screen16VC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     
     
     
+    @objc func didTapView(){
+        self.view.endEditing(true)
+    }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(Screen16VC.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
         
         //.numberPad
         EnteredDosageTxt.delegate = self

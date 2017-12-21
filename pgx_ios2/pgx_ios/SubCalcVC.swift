@@ -391,11 +391,19 @@ class SubCalcVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         // navigation
         
         
+    @objc func didTapView(){
+        self.view.endEditing(true)
+    }
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(SubCalcVC.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
+            
             
             //.numberPad
             EnteredDosageTxt.delegate = self

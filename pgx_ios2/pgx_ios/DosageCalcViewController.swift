@@ -362,19 +362,19 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         }
         
     }
-    let DosageWeight = ["mg/kg","mcg/kg","gm/kg"]
+    let DosageWeight = ["", "mg/kg","mcg/kg","gm/kg"]
     
-    let WeightType = ["kg","lbs"]
+    let WeightType = ["", "kg","lbs"]
     
-    let LiqMedWeight = ["gm","mcg","mg"]
+    let LiqMedWeight = ["", "gm","mcg","mg"]
     
-    let LiqVolType = ["L","mL"]
+    let LiqVolType = ["","L","mL"]
     
-    let DoseFreq = ["gm BID","gm Daily","gm QID","gm TID","gm q1 hr","gm q2 hr","gm q4 hr","mcg BID","mcg Daily","mcg QID","mcg TID","mcg q1 hr","mcg q2 hr","mcg q4 hr","mg BID","mg Daily","mg QID","mg TID","mg q1 hr","mg q2 hr","mg q4 hr"]
+    let DoseFreq = ["","gm BID","gm Daily","gm QID","gm TID","gm q1 hr","gm q2 hr","gm q4 hr","mcg BID","mcg Daily","mcg QID","mcg TID","mcg q1 hr","mcg q2 hr","mcg q4 hr","mg BID","mg Daily","mg QID","mg TID","mg q1 hr","mg q2 hr","mg q4 hr"]
     
-    let LiqDoseFreq = ["L BID","L Daily","L QID","L TID","L q1 hr","L q2 hr","L q4 hr","mL BID","mL Daily","mL QID","mL TID","mL q1 hr","mL q2 hr","mL q4 hr"]
+    let LiqDoseFreq = ["","L BID","L Daily","L QID","L TID","L q1 hr","L q2 hr","L q4 hr","mL BID","mL Daily","mL QID","mL TID","mL q1 hr","mL q2 hr","mL q4 hr"]
     
-    let DecPerc = ["0","1","2","3"]
+    let DecPerc = ["","0","1","2","3"]
 
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -394,11 +394,19 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     
     
+    @objc func didTapView(){
+        self.view.endEditing(true)
+    }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(DosageCalcViewController.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
+        
         //.numberPad
         EnteredDosageTxt.delegate = self
         EnteredDosageTxt.keyboardType = UIKeyboardType.decimalPad
@@ -421,7 +429,8 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
         DoseFreqTxt.text = DoseFreq[15]
         LiqDoseFreqTxt.text = LiqDoseFreq[8]
         DecPercTxt.text = DecPerc[2]
-        
+    
+
         let DosageWeightView = UIPickerView()
         DosageWeightView.delegate = self
         DosageWeightView.tag = 1

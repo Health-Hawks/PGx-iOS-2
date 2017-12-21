@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DrugViewController.swift
 //  pgx_ios
 //
 //  Created by Tabor Scott on 10/11/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class DrugViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     var selectedDrug = ""
     var selectedGene = ""
     
@@ -18,9 +18,11 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet weak var DrugPicker: UIPickerView!
     @IBOutlet weak var DrugPickerBtn: UIButton!
     
+    @IBOutlet weak var backButtonToGetStarted: UIBarButtonItem!
+    @IBOutlet weak var nextButtonToAllele: UIBarButtonItem!
     
     
-    let genes = ["", "TPMT", "test1", "test2"]
+    let genes = ["", "TPMT"] //Add additional drugs here later
     let drugs = ["", "Mercaptopurine", "6MP", "Purinethol", "Purixan", "6Mercaptopurine", "Thioguanine", "6TG", "6Thioguanine", "Tabloid", "Azathioprine", "Azasan", "Imuran"]
 
     
@@ -89,13 +91,27 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         self.performSegue(withIdentifier: "AlleleViewController", sender: self)
     }
     
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! AlleleViewController
-        destinationVC.selectedGene = selectedGene
-        destinationVC.selectedDrug = selectedDrug
-        //selectedGene
-        //selectedDrug
-        
+        let alert = UIAlertController(title: "Missing Field", message: "Please make sure all fields are chosen", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        if let buttonPressed = sender as? UIBarButtonItem {
+            if buttonPressed == nextButtonToAllele {
+                if selectedGene == "" || selectedDrug == "" {
+                    self.present(alert, animated: true)
+                }else {
+                let destinationVC = segue.destination as! AlleleViewController
+                destinationVC.selectedGene = selectedGene
+                destinationVC.selectedDrug = selectedDrug
+                    
+                }
+                
+            }else {
+                performSegue(withIdentifier: "backToGetStarted", sender: backButtonToGetStarted)
+            }
+            
+        }
     }
+        
 }
 

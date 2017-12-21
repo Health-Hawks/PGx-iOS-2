@@ -93,6 +93,11 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     //does 1S need to be *1s?!?!?
     
     @IBAction func NextBtnPressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Missing Field", message: "Please make sure all fields are chosen", preferredStyle: UIAlertControllerStyle.alert)
+           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        let invalidSelection = UIAlertController(title: "Invalid Selection", message: "Please select a valid allele combination", preferredStyle: UIAlertControllerStyle.alert)
+            invalidSelection.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
         if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
             performSegue(withIdentifier: "S1", sender: nil)
         }
@@ -741,14 +746,13 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
             performSegue(withIdentifier: "S9", sender: nil)
         }
-        else{
-            
-            print ("error")
+        else if (selectedAllele1 == "" || selectedAllele2 == "") {
+            self.present(alert, animated: true)
         }
-        
-        
+        else {
+            self.present(invalidSelection, animated:true)
+        }
     }
-    
 }
 
 
