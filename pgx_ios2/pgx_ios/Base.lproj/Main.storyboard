@@ -16,10 +16,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Intro Page View Controller-->
         <scene sceneID="OMg-cU-3Eh">
             <objects>
-                <viewController id="Xzh-iG-L48" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xzh-iG-L48" customClass="IntroPageViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9a8-xa-e16">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,17 +34,25 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="Fkj-9l-5Au"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wA6-4u-zdd" appends="YES" id="cv0-FN-MLo"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <segue destination="TIS-N2-ZK9" kind="show" identifier="toIntro2" id="Gjf-5J-3jz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMb-X9-yNZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="wA6-4u-zdd"/>
             </objects>
-            <point key="canvasLocation" x="-1957.5999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="-2150" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro Page View Controller-->
         <scene sceneID="bgD-a7-aZ4">
             <objects>
-                <viewController id="TIS-N2-ZK9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TIS-N2-ZK9" customClass="IntroPageViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7N0-jb-l06">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,23 +68,33 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen2text" translatesAutoresizingMaskIntoConstraints="NO" id="Af3-jw-N5J">
                                         <rect key="frame" x="18" y="105" width="339" height="189"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0uH-jw-zVc" appends="YES" id="hb4-vU-lWv"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aFl-E1-okZ"/>
                     </view>
+                    <connections>
+                        <segue destination="Xzh-iG-L48" kind="show" identifier="toIntro1" id="a5R-aL-jTb"/>
+                        <segue destination="ygo-iZ-MnQ" kind="show" identifier="toIntro3" id="hMD-Cs-wJc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o3D-6t-lxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="0uH-jw-zVc"/>
             </objects>
             <point key="canvasLocation" x="-1296.8" y="125.4872563718141"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro Page View Controller-->
         <scene sceneID="8uO-EQ-S31">
             <objects>
-                <viewController id="ygo-iZ-MnQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ygo-iZ-MnQ" customClass="IntroPageViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="drr-tg-3q3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,17 +113,26 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="q0U-3b-axS"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Jdo-rD-wjo" appends="YES" id="dpF-Ky-zAj"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <segue destination="TIS-N2-ZK9" kind="show" identifier="toIntro2" id="XuB-VP-Afm"/>
+                        <segue destination="cEC-9v-Rge" kind="show" identifier="toIntro4" id="LtJ-L1-anN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wd-41-PBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Jdo-rD-wjo"/>
             </objects>
             <point key="canvasLocation" x="-560.79999999999995" y="126.38680659670166"/>
         </scene>
-        <!--View Controller-->
+        <!--Intro Page View Controller-->
         <scene sceneID="g4f-96-CF9">
             <objects>
-                <viewController id="cEC-9v-Rge" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="intro4" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cEC-9v-Rge" customClass="IntroPageViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bvA-P2-vvg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,20 +179,29 @@
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="saM-xV-IDP" appends="YES" id="Oc7-s7-bHc"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RCF-ue-BxX"/>
                     </view>
+                    <connections>
+                        <segue destination="ygo-iZ-MnQ" kind="show" identifier="toIntro3" id="6D9-Ru-jYF"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toGetStarted" id="5yB-zt-QDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aH-GB-qYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="saM-xV-IDP"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="124.58770614692655"/>
+            <point key="canvasLocation" x="110" y="123"/>
         </scene>
         <!--Get Started View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GetStartedViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="getStarted" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="GetStartedViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1zX-gO-E4c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -406,8 +442,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg q4 hr" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ay-Sq-gUh">
-                                        <rect key="frame" x="275" y="73" width="91.5" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mcg q4 hr" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ay-Sq-gUh">
+                                        <rect key="frame" x="281" y="73" width="86" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -537,7 +573,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOx-ie-6nr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2337" y="-913"/>
+            <point key="canvasLocation" x="2336.8000000000002" y="-913.49325337331345"/>
         </scene>
         <!--Sub CalcVC-->
         <scene sceneID="6Vq-B8-2hG">
@@ -3217,7 +3253,7 @@
         <!--BasicGenetics-->
         <scene sceneID="jIW-4o-0cB">
             <objects>
-                <viewController title="BasicGenetics" id="aQh-YR-l86" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn1" title="BasicGenetics" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aQh-YR-l86" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LH6-aG-R55">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3297,7 +3333,7 @@
         <!--GeneticTests-->
         <scene sceneID="9Kl-HR-tHk">
             <objects>
-                <viewController title="GeneticTests" id="0wh-CV-2Jb" customClass="GeneticTestsViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn2" title="GeneticTests" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0wh-CV-2Jb" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1eY-NP-vUA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3336,7 +3372,7 @@
         <!--WhyIndividuals-->
         <scene sceneID="Qlg-ou-rmi">
             <objects>
-                <viewController title="WhyIndividuals" id="n9D-kW-I6w" customClass="WhyIndividViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn3" title="WhyIndividuals" useStoryboardIdentifierAsRestorationIdentifier="YES" id="n9D-kW-I6w" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tZ6-Ac-oWi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3358,7 +3394,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="DZF-ot-p8j"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="backToGetStarted" id="DZF-ot-p8j"/>
                         <segue destination="0wh-CV-2Jb" kind="show" identifier="toGeneticTests" id="Cap-dB-BOz"/>
                         <segue destination="Le4-Cp-4Rm" kind="show" identifier="toWhyIndividCont" id="iC0-Zc-U2L"/>
                     </connections>
@@ -3366,12 +3402,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zK-Kg-wQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="SEb-Kh-a5g"/>
             </objects>
-            <point key="canvasLocation" x="2562" y="955"/>
+            <point key="canvasLocation" x="2574" y="955"/>
         </scene>
         <!--WhyIndividualsCont-->
         <scene sceneID="COl-TT-hia">
             <objects>
-                <viewController title="WhyIndividualsCont" id="Le4-Cp-4Rm" customClass="WhyIndividContViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn4" title="WhyIndividualsCont" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Le4-Cp-4Rm" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kgc-T9-uWe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3410,7 +3446,7 @@
         <!--Pharmacogenetic-->
         <scene sceneID="ioI-j7-AzR">
             <objects>
-                <viewController title="Pharmacogenetic" id="Mqf-sP-s8e" customClass="TypesViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn5" title="Pharmacogenetic" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mqf-sP-s8e" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ogm-TA-dk3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3449,7 +3485,7 @@
         <!--Parent/Active-->
         <scene sceneID="ds8-0C-zmA">
             <objects>
-                <viewController title="Parent/Active" id="hXz-gG-FnK" customClass="ParentDrugViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn6" title="Parent/Active" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hXz-gG-FnK" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUo-0a-hin">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3492,7 +3528,7 @@
         <!--Evidence-Based-->
         <scene sceneID="gel-0q-ZMP">
             <objects>
-                <viewController title="Evidence-Based" id="R8t-VI-Mse" customClass="EvidenceViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn7" title="Evidence-Based" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R8t-VI-Mse" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C37-QZ-vmQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3539,7 +3575,7 @@
         <!--EdResources-->
         <scene sceneID="f7m-X1-VHE">
             <objects>
-                <viewController title="EdResources" id="3Aq-ar-1Rv" customClass="EducationalViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="learn8" title="EdResources" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Aq-ar-1Rv" customClass="LearnMoreViewController" customModule="pgx_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lju-Pq-aE5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3831,21 +3867,6 @@
             </objects>
             <point key="canvasLocation" x="2336.8000000000002" y="122.78860569715144"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="U0T-mm-cYK">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YXE-VP-i41" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zhV-nE-bRr">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qXV-MS-bI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2826" y="126"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Screen10" width="632" height="674"/>
@@ -3908,15 +3929,16 @@
         <image name="screen7title" width="222" height="99"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wKE-a7-Hps"/>
-        <segue reference="HyB-Y8-XyC"/>
+        <segue reference="1WO-5n-7RK"/>
         <segue reference="myq-4A-c7g"/>
-        <segue reference="DZ2-wd-owj"/>
-        <segue reference="1vS-Hi-dqf"/>
-        <segue reference="0ah-gw-yNl"/>
+        <segue reference="Coc-mr-5zL"/>
+        <segue reference="kKZ-HR-0VM"/>
+        <segue reference="iC0-Zc-U2L"/>
         <segue reference="fMl-9f-nDl"/>
-        <segue reference="Cap-dB-BOz"/>
-        <segue reference="RX0-H6-0f5"/>
-        <segue reference="3Rc-vu-evg"/>
+        <segue reference="fZ2-JQ-ity"/>
+        <segue reference="Yby-1K-fqY"/>
+        <segue reference="5yB-zt-QDg"/>
+        <segue reference="6D9-Ru-jYF"/>
+        <segue reference="XuB-VP-Afm"/>
     </inferredMetricsTieBreakers>
 </document>

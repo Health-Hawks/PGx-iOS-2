@@ -12,15 +12,22 @@ class GetStartedViewController: UIViewController {
 
     @IBOutlet weak var getStartedButton: UIButton!
     @IBOutlet weak var wantToKnowMore: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+//        if UserDefaults.standard.bool(forKey: "Intro") {
+//            print(UserDefaults.standard.bool)
+//        } else {
+//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "intro1")
+//            self.show(vc!, sender: vc)
+//        }
         getStartedButton.layer.cornerRadius = 30
         getStartedButton.layer.masksToBounds = true
         wantToKnowMore.layer.cornerRadius = 30
         wantToKnowMore.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

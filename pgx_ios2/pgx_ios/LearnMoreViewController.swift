@@ -31,16 +31,107 @@ class LearnMoreViewController: UIViewController {
 
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer{
-            switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.down:
-                performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
-                print("Swiped down")
-            case UISwipeGestureRecognizerDirection.left:
-                performSegue(withIdentifier: "toGeneticTest", sender: UISwipeGestureRecognizerDirection.left)
-                print("Swiped left")
-            case UISwipeGestureRecognizerDirection.up:
-                performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
-                print("Swiped up")
+            switch restorationIdentifier {
+            case "learn1"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toGeneticTest", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "learn2"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "toBasicGenetics", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toWhyIndividuals", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "learn3"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "toGeneticTests", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toWhyIndividCont", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "learn4"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "toWhyIndividuals", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toTypes", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "learn5"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "toCont", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toParentDrug", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "learn6"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "toTypes", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toEvid", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "learn7"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "toParentDrug", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toEducational", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "learn8"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "toEvidence", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
             default:
                 break
             }
@@ -65,51 +156,4 @@ class LearnMoreViewController: UIViewController {
 }
 
 
-//if presentedViewController?.title == "BasicGenetics" {
-//    switch swipeGesture.direction {
-//    case UISwipeGestureRecognizerDirection.right:
-//        print("right")
-//    case UISwipeGestureRecognizerDirection.down:
-//        performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
-//        print("down")
-//    case UISwipeGestureRecognizerDirection.left:
-//        performSegue(withIdentifier: "toGeneticTest", sender: UISwipeGestureRecognizerDirection.left)
-//        print("left")
-//    case UISwipeGestureRecognizerDirection.up:
-//        performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
-//        print("up")
-//    default:
-//        break
-//    }
-//}
-//else if presentedViewController?.title == "GeneticTests" {
-//    switch swipeGesture.direction {
-//    case UISwipeGestureRecognizerDirection.right:
-//        performSegue(withIdentifier: "toBasicGenetics", sender: UISwipeGestureRecognizerDirection.right)
-//    case UISwipeGestureRecognizerDirection.down:
-//        performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
-//    case UISwipeGestureRecognizerDirection.left:
-//        performSegue(withIdentifier: "toWhyIndividuals", sender: UISwipeGestureRecognizerDirection.left)
-//    case UISwipeGestureRecognizerDirection.up:
-//        performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
-//    default:
-//        break
-//    }
-//}
-//else if presentedViewController?.title == "WhyIndividuals" {
-//    switch swipeGesture.direction {
-//    case UISwipeGestureRecognizerDirection.right:
-//        performSegue(withIdentifier: "toWhyIndividuals", sender: UISwipeGestureRecognizerDirection.right)
-//    case UISwipeGestureRecognizerDirection.down:
-//        performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
-//    case UISwipeGestureRecognizerDirection.left:
-//        performSegue(withIdentifier: "toWhyIndividCont", sender: UISwipeGestureRecognizerDirection.left)
-//    case UISwipeGestureRecognizerDirection.up:
-//        performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
-//    default:
-//        break
-//    }
-//}
-//}
-//}
 
