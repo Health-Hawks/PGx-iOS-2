@@ -29,6 +29,7 @@ class IntroPageViewController: UIViewController {
                 switch swipeGesture.direction {
                 case UISwipeGestureRecognizerDirection.left:
                     performSegue(withIdentifier: "toIntro2", sender: UISwipeGestureRecognizerDirection.left)
+                    print("To page 2")
                 default:
                     break
                 }
@@ -38,6 +39,7 @@ class IntroPageViewController: UIViewController {
                     performSegue(withIdentifier: "toIntro3", sender: UISwipeGestureRecognizerDirection.left)
                 case UISwipeGestureRecognizerDirection.right:
                     performSegue(withIdentifier: "toIntro1", sender: UISwipeGestureRecognizerDirection.right)
+                    print("Back to page 1")
                 default:
                     break
                 }
@@ -47,6 +49,7 @@ class IntroPageViewController: UIViewController {
                     performSegue(withIdentifier: "toIntro4", sender: UISwipeGestureRecognizerDirection.left)
                 case UISwipeGestureRecognizerDirection.right:
                     performSegue(withIdentifier: "toIntro2", sender: UISwipeGestureRecognizerDirection.right)
+                    print("Back to page 2")
                 default:
                     break
                 }
@@ -54,9 +57,10 @@ class IntroPageViewController: UIViewController {
                 switch swipeGesture.direction {
                 case UISwipeGestureRecognizerDirection.left:
                     performSegue(withIdentifier: "toGetStarted", sender: UISwipeGestureRecognizerDirection.left)
-                    UserDefaults.standard.set(true, forKey: "firstLaunch")
+                    //UserDefaults.standard.set(true, forKey: "firstLaunch")
                 case UISwipeGestureRecognizerDirection.right:
                     performSegue(withIdentifier: "toIntro3", sender: UISwipeGestureRecognizerDirection.right)
+                    print("Back to page 3")
                 default:
                     break
                 }

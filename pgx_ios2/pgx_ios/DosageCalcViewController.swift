@@ -378,7 +378,7 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
 
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
+        let invalidCharacters = CharacterSet(charactersIn: "0123456789.").inverted
         return string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil
     }
     
@@ -468,7 +468,6 @@ class DosageCalcViewController: UIViewController, UIPickerViewDelegate, UIPicker
     
     }
     
-
     public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }

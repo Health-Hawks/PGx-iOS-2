@@ -376,7 +376,7 @@ class Screen10VC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let invalidCharacters = CharacterSet(charactersIn: "0123456789").inverted
+        let invalidCharacters = CharacterSet(charactersIn: "0123456789.").inverted
         return string.rangeOfCharacter(from: invalidCharacters, options: [], range: string.startIndex ..< string.endIndex) == nil
     }
     
@@ -391,11 +391,18 @@ class Screen10VC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
     // navigation
     
     
+    @objc func didTapView(){
+        self.view.endEditing(true)
+    }
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(Screen10VC.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
         
         //.numberPad
         EnteredDosageTxt.delegate = self
