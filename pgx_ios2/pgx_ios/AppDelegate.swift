@@ -16,22 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let firstLaunch = !UserDefaults.standard.bool(forKey: "firstLaunch")
-        
-        if firstLaunch {
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyBoard.instantiateViewController(withIdentifier: "intro1")
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
-            print("first Launch")
-        } else  {
-            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let initialViewController = storyBoard.instantiateViewController(withIdentifier: "getStarted")
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
-        } 
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let initialViewController = storyBoard.instantiateViewController(withIdentifier: "getStarted")
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         
         return true
+        
     }
     
 

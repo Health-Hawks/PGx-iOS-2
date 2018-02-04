@@ -57,7 +57,7 @@ class IntroPageViewController: UIViewController {
                 switch swipeGesture.direction {
                 case UISwipeGestureRecognizerDirection.left:
                     performSegue(withIdentifier: "toGetStarted", sender: UISwipeGestureRecognizerDirection.left)
-                    //UserDefaults.standard.set(true, forKey: "firstLaunch")
+                    UserDefaults.standard.set(true, forKey: "firstLaunch")
                 case UISwipeGestureRecognizerDirection.right:
                     performSegue(withIdentifier: "toIntro3", sender: UISwipeGestureRecognizerDirection.right)
                     print("Back to page 3")

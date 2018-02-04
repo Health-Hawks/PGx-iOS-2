@@ -14,7 +14,6 @@
 		016C34771F8EDA9800D0D5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016C34751F8EDA9800D0D5A6 /* LaunchScreen.storyboard */; };
 		018207621FC4CAA7006161E9 /* AlleleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018207611FC4CAA7006161E9 /* AlleleViewController.swift */; };
 		4A1C3F611FEAE35F003ACF93 /* LearnMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1C3F601FEAE35F003ACF93 /* LearnMoreViewController.swift */; };
-		4A67D16E1FEC249F002ABA53 /* IntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A67D16D1FEC249F002ABA53 /* IntroPageViewController.swift */; };
 		FA0897F51FA247650071E488 /* DosageCalculatorTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */; };
 		FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */; };
 		FA1CF4DC1FD60F850037CA25 /* Screen10VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CF4DB1FD60F850037CA25 /* Screen10VC.swift */; };
@@ -38,7 +37,6 @@
 		016C34781F8EDA9800D0D5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018207611FC4CAA7006161E9 /* AlleleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlleleViewController.swift; sourceTree = "<group>"; };
 		4A1C3F601FEAE35F003ACF93 /* LearnMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMoreViewController.swift; sourceTree = "<group>"; };
-		4A67D16D1FEC249F002ABA53 /* IntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPageViewController.swift; sourceTree = "<group>"; };
 		FA0897F41FA247650071E488 /* DosageCalculatorTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalculatorTemplate.swift; sourceTree = "<group>"; };
 		FA0897F61FA247C60071E488 /* DosageCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DosageCalcViewController.swift; sourceTree = "<group>"; };
 		FA1CF4DB1FD60F850037CA25 /* Screen10VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen10VC.swift; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 				018207611FC4CAA7006161E9 /* AlleleViewController.swift */,
 				016C34701F8EDA9800D0D5A6 /* Main.storyboard */,
 				4A1C3F601FEAE35F003ACF93 /* LearnMoreViewController.swift */,
-				4A67D16D1FEC249F002ABA53 /* IntroPageViewController.swift */,
 				016C34731F8EDA9800D0D5A6 /* Assets.xcassets */,
 				016C34751F8EDA9800D0D5A6 /* LaunchScreen.storyboard */,
 				016C34781F8EDA9800D0D5A6 /* Info.plist */,
@@ -200,7 +197,6 @@
 				FA1CF4E01FD610270037CA25 /* Screen15VC.swift in Sources */,
 				FA0897F71FA247C60071E488 /* DosageCalcViewController.swift in Sources */,
 				FA1CF4E21FD610380037CA25 /* Screen14VC.swift in Sources */,
-				4A67D16E1FEC249F002ABA53 /* IntroPageViewController.swift in Sources */,
 				016C346D1F8EDA9800D0D5A6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

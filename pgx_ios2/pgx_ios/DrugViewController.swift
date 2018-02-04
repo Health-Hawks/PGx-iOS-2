@@ -22,9 +22,9 @@ class DrugViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var nextButtonToAllele: UIBarButtonItem!
     
     
-    let genes = ["", "TPMT"] //Add additional drugs here later
+    let genes = ["", "TPMT", "DPYD"] //Add additional drugs here later
     let drugs = ["", "Mercaptopurine", "6MP", "Purinethol", "Purixan", "6Mercaptopurine", "Thioguanine", "6TG", "6Thioguanine", "Tabloid", "Azathioprine", "Azasan", "Imuran"]
-
+    let drugs2 = ["", "XELODA", "Flurouracil", "Efudex", "Flouroplex", "Adrucil", "5-fluorouracil", "5-FU"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,19 +55,34 @@ class DrugViewController: UIViewController, UIPickerViewDataSource, UIPickerView
         return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        var drugCount = 0
         if (pickerView == GenePicker) {
             return genes.count
         }
         else{
-            return drugs.count}
+            if selectedGene == "TPMT"{
+                drugCount = drugs.count
+            }
+            else if selectedGene == "DPYD"{
+                drugCount = drugs2.count
+            }
+            return drugCount}
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        var selectedArray = ""
         if (pickerView == GenePicker){
+            selectedGene = genes[row]
             return genes [row]
         }
         else{
-            return drugs [row]
+            if selectedGene == "TPMT" {
+                selectedArray = drugs[row]
+            }
+            else if selectedGene == "DPYD" {
+                selectedArray = drugs2[row]
+            }
+            return selectedArray
         }
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -76,12 +91,24 @@ class DrugViewController: UIViewController, UIPickerViewDataSource, UIPickerView
             GenePickerBtn.setTitle(genes[row], for: UIControlState.normal)
             selectedGene = genes[row]
             GenePicker.isHidden = true
+            DrugPicker.reloadAllComponents()
         }
         else if (pickerView == DrugPicker){
-       
-            DrugPickerBtn.setTitle(drugs[row], for: UIControlState.normal)
-            selectedDrug = drugs[row]
-            DrugPicker.isHidden = true
+            switch selectedGene {
+            case "TPMT":
+                DrugPickerBtn.setTitle(drugs[row], for: UIControlState.normal)
+                selectedDrug = drugs[row]
+                DrugPicker.isHidden = true
+                break
+            case "DPYD":
+                DrugPickerBtn.setTitle(drugs2[row], for: UIControlState.normal)
+                selectedDrug = drugs2[row]
+                DrugPicker.isHidden = true
+                break
+            default:
+                break
+            }
+            
         }
         else{
             print("error")

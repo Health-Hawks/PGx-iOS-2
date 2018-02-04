@@ -32,12 +32,64 @@ class LearnMoreViewController: UIViewController {
     @objc func respondToSwipeGesture(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer{
             switch restorationIdentifier {
+            case "intro1"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toIntro2", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "intro2"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "backToIntro1", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toIntro3", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "intro3"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "backToIntro2", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toIntro4", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
+            case "intro4"?:
+                switch swipeGesture.direction {
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "backToIntro3", sender: UISwipeGestureRecognizerDirection.right)
+                case UISwipeGestureRecognizerDirection.down:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
+                case UISwipeGestureRecognizerDirection.left:
+                    performSegue(withIdentifier: "toLearn1", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.up:
+                    performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
+                default:
+                    break
+                }
             case "learn1"?:
                 switch swipeGesture.direction {
                 case UISwipeGestureRecognizerDirection.down:
                     performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.down)
                 case UISwipeGestureRecognizerDirection.left:
                     performSegue(withIdentifier: "toGeneticTest", sender: UISwipeGestureRecognizerDirection.left)
+                case UISwipeGestureRecognizerDirection.right:
+                    performSegue(withIdentifier: "backToIntro4", sender: UISwipeGestureRecognizerDirection.right)
                 case UISwipeGestureRecognizerDirection.up:
                     performSegue(withIdentifier: "backToGetStarted", sender: UISwipeGestureRecognizerDirection.up)
                 default:
