@@ -25,6 +25,7 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     
     let allele1 = ["", "*1", "*1S", "*2"]
     let allele2 = ["", "*1", "*1S", "*2", "3A", "*3B", "*3C", "*4"]
+    let alleleDPYD = ["", "*Normal/No variant", "*c.557A>G", "*c.1129-5923C>G", "*c.2846A>T", "*c.295_298delTCAT", "*c.703C>T", "*c.1156G>T", "*c.1679T>G", "*c.1898delC", "*c.1905+1G>A", "*c.2983G>T" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,32 +59,71 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         return 1
     }
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if (pickerView == Allele1Picker) {
-            return allele1.count
+        var alleleCount = Int()
+        switch selectedGene {
+        case "TPMT":
+            if (pickerView == Allele1Picker && selectedGene == "TPMT") {
+                alleleCount = allele1.count
+            }
+            else{
+                alleleCount = allele2.count
+                }
+        case "DPYD":
+            if (pickerView == Allele1Picker && selectedGene == "DPYD") {
+                alleleCount = alleleDPYD.count
+            }
+            else{
+                alleleCount = alleleDPYD.count
+            }
+        default:
+            break
         }
-        else{
-            return allele2.count}
+        return alleleCount
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if (pickerView == Allele1Picker){
-            return allele1 [row]
+        var pickerViewAllele = ""
+        switch selectedGene{
+        case "TPMT":
+            if (pickerView == Allele1Picker){
+                pickerViewAllele = allele1 [row]
+            }
+            else{
+                pickerViewAllele = allele2 [row]
+            }
+        case "DPYD":
+            if (pickerView == Allele1Picker){
+                pickerViewAllele = alleleDPYD [row]
+            }
+            else{
+                pickerViewAllele = alleleDPYD [row]
+            }
+        default: break
         }
-        else{
-            return allele2 [row]
-        }
+        return pickerViewAllele
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if (pickerView == Allele1Picker){
+        if (pickerView == Allele1Picker && selectedGene == "TPMT"){
             
             Allele1PickerBtn.setTitle(allele1[row], for: UIControlState.normal)
             selectedAllele1 = allele1[row]
             Allele1Picker.isHidden = true
         }
-        else if (pickerView == Allele2Picker){
+        else if (pickerView == Allele2Picker && selectedGene == "TPMT"){
             Allele2PickerBtn.setTitle(allele2[row], for: UIControlState.normal)
             selectedAllele2 = allele2[row]
             Allele2Picker.isHidden = true
         }
+        else if (pickerView == Allele1Picker && selectedGene == "DPYD"){
+            Allele1PickerBtn.setTitle(alleleDPYD[row], for: UIControlState.normal)
+            selectedAllele1 = alleleDPYD[row]
+            Allele1Picker.isHidden = true
+        }
+        else if (pickerView == Allele2Picker && selectedGene == "DPYD"){
+            Allele2PickerBtn.setTitle(alleleDPYD[row], for: UIControlState.normal)
+            selectedAllele2 = alleleDPYD[row]
+            Allele2Picker.isHidden = true
+        }
+            
         else{
             print("error")
         }
@@ -745,6 +785,9 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         }
         else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
             performSegue(withIdentifier: "S9", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" || selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD1", sender: nil)
         }
         else if (selectedAllele1 == "" || selectedAllele2 == "") {
             self.present(alert, animated: true)
