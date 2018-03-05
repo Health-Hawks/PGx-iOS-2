@@ -24,7 +24,7 @@ class DrugViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     
     let genes = ["", "TPMT", "DPYD"] //Add additional drugs here later
     let drugs = ["", "Mercaptopurine", "6MP", "Purinethol", "Purixan", "6Mercaptopurine", "Thioguanine", "6TG", "6Thioguanine", "Tabloid", "Azathioprine", "Azasan", "Imuran"]
-    let drugs2 = ["", "Capecitabine", "XELODA", "Flurouracil", "Efudex", "Flouroplex", "Adrucil", "5-fluorouracil", "5-FU"]
+    let drugs2 = ["", "Capecitabine", "XELODA", "Fluorouracil", "Efudex", "Flouroplex", "Adrucil", "5-fluorouracil", "5-FU"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

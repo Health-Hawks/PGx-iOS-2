@@ -786,8 +786,1367 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
         else if (selectedDrug == "Imuran" && selectedAllele1 == "*2" && selectedAllele2 == "*4"){
             performSegue(withIdentifier: "S9", sender: nil)
         }
-        else if (selectedDrug == "XELODA" || selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
             performSegue(withIdentifier: "DPYD1", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD5", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD5", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD5", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD5", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD5", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD5", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD3", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD3", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD3", sender: nil)
+        }
+        // other druygs intermediate
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD6", sender:nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD6", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD7", sender: nil)
+        }
+        //adf
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*Normal/No variant"){
+            performSegue(withIdentifier: "DPYD1", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "c.1679T>G"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1905+1G>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "DPYD2", sender:nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" &&  selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.557A>G") {
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.2846A>t" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "DPYD3", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "DPYD3", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*Normal/No variant" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "DPYD3", sender: nil)
+        }
+            //avoid use list 1
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Flouroplex" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.295_298delTCAT"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*1679T>G"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 == "*c.2989G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1898delC" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 == "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse", sender: nil)
+        }
+        //avoid use 2
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "XELODA" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        } else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Capecitabine" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        } else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluorouracil" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        } else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Efudex" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        } else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Fluoroplex" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        } else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "Adrucil" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        } else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-fluorouracil" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.557A>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.295_298delTCAT" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.703C>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 == "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.557A>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 ==  "*c.1129-5923C>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.703C>T" && selectedAllele2 == "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 == "*c.1156G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1679T>G"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1898delC"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.1905+1G>A"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1129-5923C>G" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1156G>T" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1679T>G" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1898delC" && selectedAllele2 ==   "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.1905+1G>A" && selectedAllele2 ==  "*c.2846A>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.2846A>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
+        }
+        else if (selectedDrug == "5-FU" && selectedAllele1 == "*c.2983G>T" && selectedAllele2 ==  "*c.2983G>T"){
+            performSegue(withIdentifier: "avoidUse2", sender: nil)
         }
         else if (selectedAllele1 == "" || selectedAllele2 == "") {
             self.present(alert, animated: true)
