@@ -22,9 +22,9 @@ class DrugViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var nextButtonToAllele: UIBarButtonItem!
     
     
-    let genes = ["", "TPMT", "DPYD"] //Add additional drugs here later
-    let drugs = ["", "Mercaptopurine", "6MP", "Purinethol", "Purixan", "6Mercaptopurine", "Thioguanine", "6TG", "6Thioguanine", "Tabloid", "Azathioprine", "Azasan", "Imuran"]
-    let drugs2 = ["", "Capecitabine", "XELODA", "Fluorouracil", "Efudex", "Flouroplex", "Adrucil", "5-fluorouracil", "5-FU"]
+    let genes = ["Select Gene", "TPMT", "DPYD"] //Add additional drugs here later
+    let drugs = ["Select Drug", "Mercaptopurine", "6MP", "Purinethol", "Purixan", "6Mercaptopurine", "Thioguanine", "6TG", "6Thioguanine", "Tabloid", "Azathioprine", "Azasan", "Imuran"]
+    let drugs2 = ["Select Drug", "Capecitabine", "XELODA", "Fluorouracil", "Efudex", "Flouroplex", "Adrucil", "5-fluorouracil", "5-FU"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

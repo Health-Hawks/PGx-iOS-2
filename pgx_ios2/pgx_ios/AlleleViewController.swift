@@ -23,9 +23,9 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
     @IBOutlet weak var Allele1Picker: UIPickerView!
     @IBOutlet weak var Allele2Picker: UIPickerView!
     
-    let allele1 = ["", "*1", "*1S", "*2"]
-    let allele2 = ["", "*1", "*1S", "*2", "3A", "*3B", "*3C", "*4"]
-    let alleleDPYD = ["", "*Normal/No variant", "*c.557A>G", "*c.1129-5923C>G", "*c.2846A>T", "*c.295_298delTCAT", "*c.703C>T", "*c.1156G>T", "*c.1679T>G", "*c.1898delC", "*c.1905+1G>A", "*c.2983G>T" ]
+    let allele1 = ["Select Allele", "*1", "*1S", "*2"]
+    let allele2 = ["Select Allele", "*1", "*1S", "*2", "3A", "*3B", "*3C", "*4"]
+    let alleleDPYD = ["Select Allele", "*Normal/No variant", "*c.557A>G", "*c.1129-5923C>G", "*c.2846A>T", "*c.295_298delTCAT", "*c.703C>T", "*c.1156G>T", "*c.1679T>G", "*c.1898delC", "*c.1905+1G>A", "*c.2983G>T" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -137,6 +137,8 @@ class AlleleViewController: UIViewController, UIPickerViewDataSource, UIPickerVi
            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         let invalidSelection = UIAlertController(title: "Invalid Selection", message: "Please select a valid allele combination", preferredStyle: UIAlertControllerStyle.alert)
             invalidSelection.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        
         
         if (selectedDrug == "Mercaptopurine" && selectedAllele1 == "*1" && selectedAllele2 == "*1"){
             performSegue(withIdentifier: "S1", sender: nil)
